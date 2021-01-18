@@ -25,35 +25,21 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'vanalstine-voice' ); ?></a>
 
-	<header id="masthead" class="site-header">
+	<header class="vv-site-header">
 		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$vanalstine_voice_description = get_bloginfo( 'description', 'display' );
-			if ( $vanalstine_voice_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $vanalstine_voice_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
+			<?php if(!has_custom_logo()) { ?>
+				<div class="logo-backup"><?php echo(get_bloginfo('name')); ?></div>
+			<?php } else { 
+				the_custom_logo();
+			}?>
 		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'vanalstine-voice' ); ?></button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
+		<nav class="header-nav header-left-nav">
+			
 		</nav><!-- #site-navigation -->
+
+		<nav clas="header-nav header-right-nav">
+			<div class="header-login"></div>
+			<div class="header-social"></div>
+		</nav>
 	</header><!-- #masthead -->
