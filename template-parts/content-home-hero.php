@@ -1,5 +1,5 @@
 <?php
-  $hero_image..............................=get_field('hero_image')
+  $hero_image                         =get_field('hero_image')
 ?>
 
 <!-- HOME HERO -->
@@ -8,6 +8,7 @@
     <div class="home-hero-headshot">
       <?php if(!empty($hero_image)): ?>
         <img src="<?php echo($hero_image['url']); ?>" alt="<?php echo($hero_image['alt']); ?>" />
+      <?php endif; ?>
     </div>
 
     <div class="home-hero-text-content">
