@@ -16,7 +16,10 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory');?>/assets/fonts/css/all.min.css">
+	<!-- Javascript -->
+	<script src="<?php bloginfo('stylesheet_directory')?>/assets/js/scripts.js" defer></script>
 	<?php wp_head(); ?>
 </head>
 
@@ -35,11 +38,34 @@
 		</div><!-- .site-branding -->
 
 		<nav class="header-nav header-left-nav">
-			
+			<?php
+				wp_nav_menu( array(
+					'theme_location'	=>	'header-menu-pages',
+					'container' 			=>	'nav',
+					'container_class'	=>	'navbar-header-links',
+					'menu_class'			=>	''
+				))
+			?>
+			<div class="header-hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+			</div>
 		</nav><!-- #site-navigation -->
 
 		<nav clas="header-nav header-right-nav">
-			<div class="header-login"></div>
-			<div class="header-social"></div>
+			<div class="header-login">
+					<a class=cta-primary>Login</a>
+			</div>
+			<div class="header-social">
+					<?php
+						wp_nav_menu( array(
+							'theme_location'	=>	'social-menu',
+							'container'				=>	'nav',
+							'container_class'	=>	'navbar-social'
+						))
+					?>
+			</div>
 		</nav>
 	</header><!-- #masthead -->
