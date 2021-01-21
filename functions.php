@@ -47,6 +47,21 @@ if ( ! function_exists( 'vanalstine_voice_setup' ) ) :
 		 */
 		add_theme_support( 'post-thumbnails' );
 
+		add_filter('wp_nav_menu_objects','my_wp_nav_menu_objects', 10, 2);
+
+		function my_wp_nav_menu_objects($items, $args) {
+			foreach($items as &$item) {
+				//vars 
+				$icon = get_field('social_icon', $item);
+				$icon = strtolower($icon);
+				if($icon) {
+					
+					$item->title ='<i class="fab fa-'.$icon.'"></i>';
+				}
+			}
+			return $items;
+		}
+
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus(
 			array(
