@@ -11,21 +11,33 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'vanalstine-voice' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'vanalstine-voice' ), 'WordPress' );
+	<footer class="site-footer">
+		<div class="container">
+			<div class="footer-info">
+				<!-- Center -->
+				<div class="site-branding">
+					<?php if(!has_custom_logo()) { ?>
+						<div class="logo-backup"><?php echo(get_bloginfo('name')); ?></div>
+					<?php } else { 
+						the_custom_logo();
+					}?>
+				</div><!-- .site-branding -->
+				<div>
+					<p>&copy; <?php echo(date('Y')); ?> VanAlstine Voice. All Rights Reserved</p>
+				</div>
+			</div>
+			<div class="footer-social-menu">
+			<?php
+					wp_nav_menu( array(
+						'theme_location'	=>	'social-menu',
+						'container'				=>	'nav',
+						'container_class'	=>	'navbar-social'
+					))
 				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'vanalstine-voice' ), 'vanalstine-voice', '<a href="http://underscores.me/">Brenden</a>' );
-				?>
+			</div>
+			
 		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+	</footer>
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
