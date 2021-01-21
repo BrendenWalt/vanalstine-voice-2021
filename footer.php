@@ -23,7 +23,7 @@
 					}?>
 				</div><!-- .site-branding -->
 				<div>
-					<p>&copy; <?php echo(date('Y')); ?> VanAlstine Voice. All Rights Reserved</p>
+					<p>&copy; <?php echo(date('Y')); ?> <?php echo(get_bloginfo('name')); ?>. All Rights Reserved</p>
 				</div>
 			</div>
 			<div class="footer-social-menu">

@@ -48,6 +48,25 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	- Alignments
 
 --------------------------------------------------------------*/
+@font-face {
+	font-family: "Glacial Indifference";
+	src: url("./assets/fonts/GlacialIndifference-Regular.otf");
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Glacial Indifference";
+	src: url("./assets/fonts/GlacialIndifference-Bold.otf");
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: "Glacial Indifference";
+	src: url("./assets/fonts/GlacialIndifference-Italic.otf");
+	font-style: italic;
+	font-weight: normal;
+}
+
 /*--------------------------------------------------------------
 # Generic
 --------------------------------------------------------------*/
@@ -854,17 +873,6 @@ textarea {
 --------------------------------------------------------------*/
 /* Jetpack infinite scroll
 --------------------------------------------- */
-/* Hide the Posts Navigation and the Footer when Infinite Scroll is in use. */
-.infinite-scroll .posts-navigation,
-.infinite-scroll.neverending .site-footer {
-	display: none;
-}
-
-/* Re-display the Theme Footer when Infinite Scroll has reached its end. */
-.infinity-end.neverending .site-footer {
-	display: block;
-}
-
 /*--------------------------------------------------------------
 # Utilities
 --------------------------------------------------------------*/
