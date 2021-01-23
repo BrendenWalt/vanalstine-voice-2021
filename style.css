@@ -735,6 +735,62 @@ textarea {
 	flex: 1 0 50%;
 }
 
+.vv-site-header {
+	padding: 12px 5%;
+	background-color: rgba(255, 255, 255, 0.5);
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.vv-site-header .content {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 0 auto;
+	max-width: 1600px;
+}
+
+.vv-site-header ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.vv-site-header ul li {
+	display: inline-block;
+}
+
+.vv-site-header ul li a {
+	text-decoration: none;
+	padding: 10px;
+	color: #707070;
+}
+
+.vv-site-header ul li a:visited {
+	color: #707070;
+}
+
+.vv-site-header .header-left-nav {
+	order: 1;
+}
+
+.vv-site-header .site-branding {
+	order: 2;
+}
+
+.vv-site-header .header-right-nav {
+	display: flex;
+	align-items: center;
+	order: 3;
+}
+
+.vv-site-header .header-right-nav i {
+	color: #3283C7;
+	font-size: 30px;
+}
+
 /* Posts and pages
 --------------------------------------------- */
 .sticky {
@@ -941,6 +997,14 @@ textarea {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 1.5em;
+}
+
+/* Generic Theme Styles
+--------------------------------------------- */
+.cta-primary {
+	background-color: #FFBFD6;
+	padding: 10px 40px;
+	color: #ffffff;
 }
 
 /*# sourceMappingURL=style.css.map */
