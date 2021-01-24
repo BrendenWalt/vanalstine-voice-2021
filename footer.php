@@ -13,6 +13,7 @@
 
 	<footer class="site-footer">
 		<div class="container">
+			<div class="left"></div>
 			<div class="footer-info">
 				<!-- Center -->
 				<div class="site-branding">
@@ -26,8 +27,8 @@
 					<p>&copy; <?php echo(date('Y')); ?> <?php echo(get_bloginfo('name')); ?>. All Rights Reserved</p>
 				</div>
 			</div>
-			<div class="footer-social-menu">
-			<?php
+			<div class="right footer-social-menu">
+				<?php
 					wp_nav_menu( array(
 						'theme_location'	=>	'social-menu',
 						'container'				=>	'nav',

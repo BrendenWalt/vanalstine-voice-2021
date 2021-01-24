@@ -735,6 +735,26 @@ textarea {
 	flex: 1 0 50%;
 }
 
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul li {
+	display: inline-block;
+}
+
+ul li a {
+	text-decoration: none;
+	padding: 10px;
+	color: #707070;
+}
+
+ul li a:visited {
+	color: #707070;
+}
+
 .vv-site-header {
 	padding: 12px 5%;
 	background-color: rgba(255, 255, 255, 0.5);
@@ -750,26 +770,6 @@ textarea {
 	justify-content: space-between;
 	margin: 0 auto;
 	max-width: 1600px;
-}
-
-.vv-site-header ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
-.vv-site-header ul li {
-	display: inline-block;
-}
-
-.vv-site-header ul li a {
-	text-decoration: none;
-	padding: 10px;
-	color: #707070;
-}
-
-.vv-site-header ul li a:visited {
-	color: #707070;
 }
 
 .vv-site-header .header-left-nav {
@@ -791,6 +791,41 @@ textarea {
 	font-size: 30px;
 }
 
+.site-footer {
+	background-color: #EAEAEA;
+	padding: 10px;
+}
+
+.site-footer .container {
+	max-width: 1600px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.site-footer .container .left, .site-footer .container .right {
+	flex: 1;
+}
+
+.site-footer .footer-info p {
+	margin: 0;
+}
+
+.site-footer .site-branding {
+	text-align: center;
+}
+
+.site-footer .footer-social-menu {
+	text-align: right;
+}
+
+.site-footer .footer-social-menu i {
+	font-size: 26px;
+	color: #3283C7;
+}
+
 /* Posts and pages
 --------------------------------------------- */
 .sticky {
@@ -799,7 +834,7 @@ textarea {
 
 .post,
 .page {
-	margin: 0 0 1.5em;
+	margin: 0;
 }
 
 .updated:not(.published) {
@@ -1005,6 +1040,41 @@ textarea {
 	background-color: #FFBFD6;
 	padding: 10px 40px;
 	color: #ffffff;
+}
+
+/* Template Parts
+--------------------------------------------- */
+.home-hero {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+}
+
+.home-hero h1 {
+	background-color: #FFBFD6;
+	color: #ffffff;
+	font-size: 6em;
+	text-align: right;
+	line-height: 105%;
+}
+
+.home-hero .home-hero-container {
+	display: flex;
+	flex-direction: row-reverse;
+	margin: 0 auto;
+	max-height: 100vh;
+	align-items: center;
+	max-width: 1600px;
+}
+
+.home-hero .home-hero-text-content {
+	margin-right: -5vw;
+}
+
+.home-hero .home-hero-scroll-indicator {
+	position: absolute;
+	bottom: 0;
+	right: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */

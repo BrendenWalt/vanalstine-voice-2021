@@ -108,6 +108,25 @@
 	}
 }
 
+// Theme header
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	li {
+		display: inline-block;
+		a {
+			text-decoration: none;
+			padding: 10px;
+			color: $color__text-primary;
+			&:visited {
+				color: $color__text-primary;
+			}
+		}
+	}
+}
+
 .vv-site-header {
 	padding: 12px 5%;
 	background-color: rgba(255, 255, 255, 0.5);
@@ -122,22 +141,7 @@
 		margin: 0 auto;
 		max-width: $content-max-width;
 	}
-	ul {
-		list-style: none;
-		margin: 0;
-		padding: 0;
-		li {
-			display: inline-block;
-			a {
-				text-decoration: none;
-				padding: 10px;
-				color: $color__text-primary;
-				&:visited {
-					color: $color__text-primary;
-				}
-			}
-		}
-	}
+	
 	.header-left-nav {
 		
 		order: 1;
@@ -152,6 +156,38 @@
 		i {
 			color: $color__brand-secondary;
 			font-size: 30px;
+		}
+	}
+}
+
+// Theme Footer
+.site-footer {
+	background-color: $color__background-footer;
+	padding: 10px;
+	.container {
+		max-width: $content_max-width;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+		justify-content: center;
+		.left, .right {
+			flex: 1;
+		}
+	}
+	.footer-info {
+		p {
+			margin: 0;
+		}
+	}
+	.site-branding {
+		text-align: center;
+	}
+	.footer-social-menu {
+		text-align: right;
+		i {
+			font-size: 26px;
+			color: $color__brand-secondary;
 		}
 	}
 }
