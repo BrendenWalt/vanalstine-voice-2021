@@ -20,10 +20,11 @@
       <div class="home-site-tagline">
         <?php echo(get_bloginfo('description')); ?>
       </div>
+      
     </div>
-
     <div class="home-hero-scroll-indicator">
       <p>Learn More</p>
     </div>
+    
   </div>
 </section>

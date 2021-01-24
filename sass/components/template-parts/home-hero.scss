@@ -1,0 +1,28 @@
+.home-hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  h1 {
+    background-color: $color__brand-primary;
+    color: $color__text-white;
+    font-size: 6em;
+    text-align: right;
+    line-height: 105%;
+  }
+  .home-hero-container {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0 auto;
+    max-height: 100vh;
+    align-items: center;
+    max-width: $content_max-width;
+  }
+  .home-hero-text-content {
+    margin-right: -5vw;
+  }
+  .home-hero-scroll-indicator {
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+  }
+}
