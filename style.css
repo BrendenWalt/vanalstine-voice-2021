@@ -791,6 +791,17 @@ ul li a:visited {
 	font-size: 30px;
 }
 
+.site-branding {
+	text-align: center;
+	line-height: 0px;
+}
+
+.site-branding img {
+	max-height: 100px;
+	width: auto;
+	display: block;
+}
+
 .site-footer {
 	background-color: #EAEAEA;
 	padding: 10px;
@@ -811,10 +822,6 @@ ul li a:visited {
 
 .site-footer .footer-info p {
 	margin: 0;
-}
-
-.site-footer .site-branding {
-	text-align: center;
 }
 
 .site-footer .footer-social-menu {
@@ -1045,9 +1052,10 @@ ul li a:visited {
 /* Template Parts
 --------------------------------------------- */
 .home-hero {
-	height: 100vh;
+	height: calc(99vh - 13vh);
 	display: flex;
 	align-items: center;
+	margin-top: 13vh;
 }
 
 .home-hero h1 {
@@ -1056,6 +1064,13 @@ ul li a:visited {
 	font-size: 6em;
 	text-align: right;
 	line-height: 105%;
+	width: min-intrinsic;
+	width: -webkit-min-content;
+	width: -moz-min-content;
+	width: min-content;
+	display: table-caption;
+	display: -ms-grid;
+	-ms-grid-columns: min-content;
 }
 
 .home-hero .home-hero-container {
@@ -1065,6 +1080,7 @@ ul li a:visited {
 	max-height: 100vh;
 	align-items: center;
 	max-width: 1600px;
+	width: 100%;
 }
 
 .home-hero .home-hero-text-content {
@@ -1075,6 +1091,10 @@ ul li a:visited {
 	position: absolute;
 	bottom: 0;
 	right: 50%;
+}
+
+.home-hero .home-site-title {
+	word-spacing: 900px;
 }
 
 /*# sourceMappingURL=style.css.map */

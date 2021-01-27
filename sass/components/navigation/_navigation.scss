@@ -160,6 +160,16 @@ ul {
 	}
 }
 
+.site-branding {
+	text-align: center;
+	line-height: 0px;
+	img {
+		max-height: 100px;
+		width: auto;
+		display: block;
+	}
+}
+
 // Theme Footer
 .site-footer {
 	background-color: $color__background-footer;
@@ -180,9 +190,7 @@ ul {
 			margin: 0;
 		}
 	}
-	.site-branding {
-		text-align: center;
-	}
+	
 	.footer-social-menu {
 		text-align: right;
 		i {

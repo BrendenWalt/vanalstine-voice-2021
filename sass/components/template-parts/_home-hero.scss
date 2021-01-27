@@ -1,13 +1,22 @@
 .home-hero {
-  height: 100vh;
+  $header-offset: 13vh;
+  height:calc(99vh - #{$header-offset});
   display: flex;
   align-items: center;
+  margin-top: $header-offset;
   h1 {
     background-color: $color__brand-primary;
     color: $color__text-white;
     font-size: 6em;
     text-align: right;
     line-height: 105%;
+    width: min-intrinsic;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+    display: table-caption;
+    display: -ms-grid;
+    -ms-grid-columns: min-content;
   }
   .home-hero-container {
     display: flex;
@@ -16,6 +25,7 @@
     max-height: 100vh;
     align-items: center;
     max-width: $content_max-width;
+    width: 100%;
   }
   .home-hero-text-content {
     margin-right: -5vw;
@@ -24,5 +34,8 @@
     position: absolute;
     bottom: 0;
     right: 50%;
+  }
+  .home-site-title {
+    word-spacing: 900px;
   }
 }
