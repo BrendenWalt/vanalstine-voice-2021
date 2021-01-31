@@ -1,5 +1,50 @@
+// LAYOUT STYLES
+.content-container {
+  max-width: $content_max-width;
+  margin: 0 auto;
+}
+
+
+// BUTTON STYLES
 .cta-primary {
   background-color: $color__brand-primary;
   padding: 10px 40px;
   color: $color__text-white;
+  display: inline-block;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  &:hover {
+    color: $color__text-white;
+    background-color: darken($color__brand-primary, 8%);
+  }
+  &.color-secondary {
+    background-color: $color__brand-secondary;
+    &:hover {
+      background-color:darken($color__brand-secondary, 8%)
+    }
+  }
+  &:visited {
+    color: $color__text-white;
+  }
+}
+
+.cta-secondary {
+  padding: 10px 40px;
+  color: $color__text-white;
+  border: 3px solid $color__brand-primary;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 0px 5px;
+  transition: all 0.2s ease-in-out;
+  &:visited {
+    color: $color__text-white;
+  }
+  &:hover {
+    background-color: $color__brand-primary;
+  }
 }

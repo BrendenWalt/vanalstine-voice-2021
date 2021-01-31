@@ -1,0 +1,56 @@
+.home-programs {
+  background-color: $color__brand-secondary;
+  background: linear-gradient(180deg, $color__brand-secondary 50%, rgba(255,255,255,1) 50%);
+  padding: 45px 5%;
+  h2 {
+    margin-top: 0px;
+    text-align: center;
+  }
+  h3 {
+    color: $color__text-white;
+  }
+  p {
+    color: $color__text_white;
+  }
+  .home-programs-container {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: stretch;
+  }
+  .home-program-card {
+    background-color: $color__background-dark;
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 33%;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 5%;
+    position: relative;
+    margin: 5px;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(44, 44, 44, 0.45);
+    }
+  }
+  .program-text {
+    padding-bottom: 45px;
+    z-index: 2;
+    text-align: center;
+  }
+  .cta-primary {
+    align-self: flex-end;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}

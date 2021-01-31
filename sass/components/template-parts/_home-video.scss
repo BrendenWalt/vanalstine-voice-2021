@@ -1,0 +1,15 @@
+.home-video {
+  padding: 45px 5%;
+  .home-video-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .video {
+    width: 50%;
+  }
+  .video-textarea {
+    width: 50%;
+  }
+}

@@ -3,7 +3,7 @@
   height:calc(98vh - #{$header-offset});
   display: flex;
   align-items: center;
-  margin-top: $header-offset + 1;
+  margin-top: $header-offset;
   h1 {
     background-color: $color__brand-primary;
     color: $color__text-white;

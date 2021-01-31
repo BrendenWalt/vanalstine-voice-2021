@@ -110,7 +110,7 @@
 
 // Theme header
 
-ul {
+nav ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -118,9 +118,13 @@ ul {
 		display: inline-block;
 		a {
 			text-decoration: none;
-			padding: 10px;
+			padding: 10px 15px;
 			color: $color__text-primary;
+			position: relative;
 			&:visited {
+				color: $color__text-primary;
+			}
+			&:hover {
 				color: $color__text-primary;
 			}
 		}
@@ -133,6 +137,7 @@ ul {
 	position: fixed;
 	top: 0;
 	width: 100%;
+	z-index: 100;
 	.content {
 		display: flex;
 		align-items: center;
@@ -141,10 +146,30 @@ ul {
 		margin: 0 auto;
 		max-width: $content-max-width;
 	}
-	
 	.header-left-nav {
-		
 		order: 1;
+		nav {
+			li {
+				font-size: 18px;
+			}
+			a:before {
+				content: '';
+				position: absolute;
+				left:50%;
+				bottom: 4px;
+				width: calc(100% - 15px);
+				height: 10px;
+				background-color: $color__brand-primary;
+				z-index: -1;
+				transform: translateX(-50%) translateY(-50%);
+				opacity: 0;
+				transition: all 0.2s ease-in-out
+			}
+			a:hover:before, a:active:before {
+				opacity: 1;
+			}
+		}
+			
 	}
 	.site-branding {
 		order: 2;
@@ -153,9 +178,16 @@ ul {
 		display: flex;
 		align-items: center;
 		order: 3;
+		.header-login {
+			margin-right: 10px;
+		}
 		i {
 			color: $color__brand-secondary;
 			font-size: 30px;
+			transition: all 0.2s ease-in-out;
+			&:hover {
+				color: darken($color__brand-secondary, 15%);
+			}
 		}
 	}
 }
