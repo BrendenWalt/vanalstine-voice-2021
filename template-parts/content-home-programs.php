@@ -12,7 +12,7 @@
         <h3 class="program-title">Lorem, ipsum.</h3>
         <p class="program-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, repellat!</p>
       </div>
-      <a class="cta-primary color-secondary">Learn More</a>
+      <a class="cta-primary">Learn More</a>
     </div>
 
     <!-- program card -->
@@ -21,7 +21,7 @@
         <h3 class="program-title">Lorem, ipsum.</h3>
         <p class="program-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, repellat!</p>
       </div>
-      <a class="cta-primary color-secondary">Learn More</a>
+      <a class="cta-primary">Learn More</a>
     </div>
 
     <!-- program card -->

@@ -1,0 +1,84 @@
+.home-testimonials {
+  margin: 100px auto;
+  h4 {
+    text-align: center;
+    font-size: 36px;
+    line-height: 54px;
+    margin-top: 0px;
+  }
+  footer {
+    text-align: center;
+    strong { font-size: 22px;}
+  }
+  .content-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .testimonial-card-container {
+    width: 85%;
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    &:before {
+      content:'\f10d';
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      opacity: 0.4;
+      position: absolute;
+      top: -40%;
+      left: -10%;
+      font-size: 12rem;
+      color: $color__brand-primary;
+      z-index: -1;
+    }
+    &:after {
+      content:'\f10e';
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      opacity: 0.4;
+      position: absolute;
+      bottom: 0%;
+      right: -10%;
+      font-size: 12rem;
+      color: $color__brand-primary;
+      z-index: -1;
+    }
+  }
+  .testimonials-container {
+    position: relative;
+  }
+  .testimonial-counter-container {
+    text-align: center;
+    padding-top: 20px;
+  }
+  .testimonial-counter {
+    display: inline-block;
+    border-radius: 6px;
+    width: 12px;
+    height: 12px;
+    border: 1px solid $color__brand-primary;
+    text-align: center;
+    margin: 0px 5px;
+    &.active {
+      background-color: $color__brand-primary;
+    }
+  }
+  .testimonial-nav {
+    i {
+      color: $color__brand-primary;
+      font-size: 3rem; 
+      opacity: 0.4;
+      transform-origin: left center;
+      transition: all 0.2s ease-in-out;
+      cursor: pointer;
+      &:hover {
+        opacity: 1;
+      }
+    }
+    &.fa-chevron-right {
+      transform-origin: right center;
+    }
+  }
+}

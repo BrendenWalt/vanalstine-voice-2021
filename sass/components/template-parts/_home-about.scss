@@ -1,0 +1,44 @@
+.home-about {
+  .content-container {
+    max-width: $content__med-width;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .home-about-img {
+    width: 45%;
+    max-width: 620px;
+    img {
+      width: 100%;
+    }
+  }
+  .home-about-text-container {
+    flex: 1;
+    position: relative;
+    margin-left: -100px;
+    .about-box {
+      position: relative;
+      background-color: $color__brand-primary;
+      padding: 35px 35px 35px 70px;
+    }
+    h2 {
+      color: $color__text-white;
+      margin: 0;
+      position: absolute;
+      left: 25px;
+      top: 0;
+      transform: translateY(-60%);
+    }
+    p {
+      margin: 0;
+    }
+    .cta-primary {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      transform: translateY(100%);
+    }
+  }
+
+}
