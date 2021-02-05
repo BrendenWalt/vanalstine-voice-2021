@@ -165,7 +165,11 @@ function vanalstine_voice_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 
-	wp_enqueue_script( 'custom-scripts', get_template_directory_uri() . '/js/scripts.js', array(), true);
+	// Load swiper files
+	wp_enqueue_style('swiper-bundle-styles', get_template_directory_uri() . '/assets/swiper/swiper-bundle.min.css', array(), true);
+	wp_enqueue_script( 'swiper-bundle', get_template_directory_uri() . '/assets/swiper/swiper-bundle.min.js', array(), true);
+
+	wp_enqueue_script( 'custom-scripts', get_template_directory_uri() . '/assets/js/scripts.js', array(), true);
 }
 add_action( 'wp_enqueue_scripts', 'vanalstine_voice_scripts' );
 
@@ -197,4 +201,3 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 }
 // ACF Groups
 include_once(get_template_directory().'/inc/acf-groups.php');
-
