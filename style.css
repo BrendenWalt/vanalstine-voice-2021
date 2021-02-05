@@ -1376,6 +1376,7 @@ nav ul li a:hover {
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
+	padding: 10vh 0px;
 }
 
 .home-about .home-about-img {
@@ -1516,6 +1517,10 @@ nav ul li a:hover {
 
 .home-testimonials .testimonial-nav.fa-chevron-right {
 	transform-origin: right center;
+}
+
+.home-ig-feed #sb_instagram.sbi {
+	padding-bottom: 0px !important;
 }
 
 /*# sourceMappingURL=style.css.map */

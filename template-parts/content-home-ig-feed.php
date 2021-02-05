@@ -8,6 +8,8 @@
       <i></i>
       <h3>Lorem ipsum dolor sit amet.</h3>
     </div>
-    <div class="ig-feed-items"></div>
+    <div class="ig-feed-items">
+      <?php echo do_shortcode("[instagram-feed]") ?>
+    </div>
   </div>
 </section>

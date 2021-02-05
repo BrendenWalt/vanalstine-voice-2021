@@ -164,6 +164,8 @@ function vanalstine_voice_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+
+	wp_enqueue_script( 'custom-scripts', get_template_directory_uri() . '/js/scripts.js', array(), true);
 }
 add_action( 'wp_enqueue_scripts', 'vanalstine_voice_scripts' );
 
