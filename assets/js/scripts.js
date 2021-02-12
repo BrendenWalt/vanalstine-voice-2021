@@ -23,21 +23,35 @@
   // }
 
   var swiper = new Swiper('.swiper-container',  {
-    // observer: true,
-    // observeParents: true,
-    // slidesPerView: 1,
-    // cssMode: true,
+    slidesPerView: 1,
+    spaceBetween: 30,
     loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true
-    },
-    mousewheel: false,
-    keyboard: true,
+
+    // observer: true,
+    // observeParents: true,
+    // slidesPerView: 1,
+    // cssMode: true,
+
+
+    // loop: true,
+    // navigation: {
+    //   nextEl: '.swiper-button-next',
+    //   prevEl: '.swiper-button-prev',
+    // },
+    // pagination: {
+    //   el: '.swiper-pagination',
+    //   clickable: true
+    // },
+    // mousewheel: false,
+    // keyboard: true,
    
   });
   console.log(swiper);
