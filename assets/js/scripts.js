@@ -36,7 +36,7 @@
       el: '.swiper-pagination',
       clickable: true
     },
-    mousewheel: true,
+    mousewheel: false,
     keyboard: true,
    
   });

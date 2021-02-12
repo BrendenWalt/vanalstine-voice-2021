@@ -1,5 +1,30 @@
 .home-testimonials {
   margin: 100px auto;
+  position: relative;
+  &:before {
+    content:'\f10d';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    opacity: 0.4;
+    position: absolute;
+    top: -40%;
+    left: 5vw;
+    font-size: 12rem;
+    color: $color__brand-primary;
+    z-index: -1;
+  }
+  &:after {
+    content:'\f10e';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    opacity: 0.4;
+    position: absolute;
+    bottom: 0%;
+    right: 5vw;
+    font-size: 12rem;
+    color: $color__brand-primary;
+    z-index: -1;
+  }
   h4 {
     text-align: center;
     font-size: 36px;
@@ -15,36 +40,17 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    
+    &.swiper-container {
+      max-width: 1100px;
+      overflow-x: hidden;
+      overflow-y: visible;
+    }
   }
   .testimonial-card-container {
-    width: 85%;
-    max-width: 1100px;
     margin: 0 auto;
     position: relative;
-    &:before {
-      content:'\f10d';
-      font-family: "Font Awesome 5 Free";
-      font-weight: 900;
-      opacity: 0.4;
-      position: absolute;
-      top: -40%;
-      left: -10%;
-      font-size: 12rem;
-      color: $color__brand-primary;
-      z-index: -1;
-    }
-    &:after {
-      content:'\f10e';
-      font-family: "Font Awesome 5 Free";
-      font-weight: 900;
-      opacity: 0.4;
-      position: absolute;
-      bottom: 0%;
-      right: -10%;
-      font-size: 12rem;
-      color: $color__brand-primary;
-      z-index: -1;
-    }
+    
   }
   .testimonials-container {
     position: relative;
@@ -52,6 +58,16 @@
   .testimonial-counter-container {
     text-align: center;
     padding-top: 20px;
+    &.swiper-pagination {
+      bottom: -40px;
+    }
+    .swiper-pagination-bullet {
+      background: $color__brand-primary;
+      &:focus {
+        outline: none;
+        border: 0;
+      }
+    }
   }
   .testimonial-counter {
     display: inline-block;
@@ -64,21 +80,22 @@
     &.active {
       background-color: $color__brand-primary;
     }
+    
   }
-  .testimonial-nav {
-    i {
+  .testimonial-nav.swiper-button-prev,
+  .testimonial-nav.swiper-button-next {
+    &:after {
       color: $color__brand-primary;
       font-size: 3rem; 
-      opacity: 0.4;
-      transform-origin: left center;
-      transition: all 0.2s ease-in-out;
-      cursor: pointer;
-      &:hover {
-        opacity: 1;
-      }
+       opacity: 0.4;
+       transition: all 0.2s ease-in-out;
     }
-    &.fa-chevron-right {
-      transform-origin: right center;
+    &:hover:after {
+      opacity: 1;
+    }
+    &:focus {
+      border: 0;
+      outline: none;
     }
   }
 }

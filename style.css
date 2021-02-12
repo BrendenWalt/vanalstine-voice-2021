@@ -1319,6 +1319,7 @@ nav ul li a:hover {
 
 .home-programs .cta-primary {
 	align-self: flex-end;
+	display: block;
 	position: absolute;
 	bottom: 0;
 	right: 0;
@@ -1422,6 +1423,33 @@ nav ul li a:hover {
 
 .home-testimonials {
 	margin: 100px auto;
+	position: relative;
+}
+
+.home-testimonials:before {
+	content: '\f10d';
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	opacity: 0.4;
+	position: absolute;
+	top: -40%;
+	left: 5vw;
+	font-size: 12rem;
+	color: #FFBFD6;
+	z-index: -1;
+}
+
+.home-testimonials:after {
+	content: '\f10e';
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	opacity: 0.4;
+	position: absolute;
+	bottom: 0%;
+	right: 5vw;
+	font-size: 12rem;
+	color: #FFBFD6;
+	z-index: -1;
 }
 
 .home-testimonials h4 {
@@ -1446,37 +1474,15 @@ nav ul li a:hover {
 	justify-content: space-between;
 }
 
-.home-testimonials .testimonial-card-container {
-	width: 85%;
+.home-testimonials .content-container.swiper-container {
 	max-width: 1100px;
+	overflow-x: hidden;
+	overflow-y: visible;
+}
+
+.home-testimonials .testimonial-card-container {
 	margin: 0 auto;
 	position: relative;
-}
-
-.home-testimonials .testimonial-card-container:before {
-	content: '\f10d';
-	font-family: "Font Awesome 5 Free";
-	font-weight: 900;
-	opacity: 0.4;
-	position: absolute;
-	top: -40%;
-	left: -10%;
-	font-size: 12rem;
-	color: #FFBFD6;
-	z-index: -1;
-}
-
-.home-testimonials .testimonial-card-container:after {
-	content: '\f10e';
-	font-family: "Font Awesome 5 Free";
-	font-weight: 900;
-	opacity: 0.4;
-	position: absolute;
-	bottom: 0%;
-	right: -10%;
-	font-size: 12rem;
-	color: #FFBFD6;
-	z-index: -1;
 }
 
 .home-testimonials .testimonials-container {
@@ -1486,6 +1492,19 @@ nav ul li a:hover {
 .home-testimonials .testimonial-counter-container {
 	text-align: center;
 	padding-top: 20px;
+}
+
+.home-testimonials .testimonial-counter-container.swiper-pagination {
+	bottom: -40px;
+}
+
+.home-testimonials .testimonial-counter-container .swiper-pagination-bullet {
+	background: #FFBFD6;
+}
+
+.home-testimonials .testimonial-counter-container .swiper-pagination-bullet:focus {
+	outline: none;
+	border: 0;
 }
 
 .home-testimonials .testimonial-counter {
@@ -1502,21 +1521,23 @@ nav ul li a:hover {
 	background-color: #FFBFD6;
 }
 
-.home-testimonials .testimonial-nav i {
+.home-testimonials .testimonial-nav.swiper-button-prev:after,
+.home-testimonials .testimonial-nav.swiper-button-next:after {
 	color: #FFBFD6;
 	font-size: 3rem;
 	opacity: 0.4;
-	transform-origin: left center;
 	transition: all 0.2s ease-in-out;
-	cursor: pointer;
 }
 
-.home-testimonials .testimonial-nav i:hover {
+.home-testimonials .testimonial-nav.swiper-button-prev:hover:after,
+.home-testimonials .testimonial-nav.swiper-button-next:hover:after {
 	opacity: 1;
 }
 
-.home-testimonials .testimonial-nav.fa-chevron-right {
-	transform-origin: right center;
+.home-testimonials .testimonial-nav.swiper-button-prev:focus,
+.home-testimonials .testimonial-nav.swiper-button-next:focus {
+	border: 0;
+	outline: none;
 }
 
 .home-ig-feed #sb_instagram.sbi {
