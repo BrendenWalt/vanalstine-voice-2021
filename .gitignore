@@ -47,3 +47,7 @@ Thumbs.db
 
 # track these themes
 !wp-content/themes/vanalstine-voice/
+
+# track db exports during development
+!db-exports/
+!db-exports/*
