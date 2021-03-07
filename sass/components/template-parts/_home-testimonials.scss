@@ -5,6 +5,7 @@
     font-size: 36px;
     line-height: 54px;
     margin-top: 0px;
+    font-weight: 200;
   }
   footer {
     text-align: center;
@@ -12,7 +13,7 @@
   }
   .carousel-container {
     max-width: 1200px;
-    margin: 100px auto;
+    margin: 140px auto;
     position: relative;
     &:before {
       content:'\f10d';
@@ -20,7 +21,7 @@
       font-weight: 900;
       opacity: 0.4;
       position: absolute;
-      top: -10rem;
+      top: -9rem;
       left: 45px;
       font-size: 12rem;
       color: $color__brand-primary;
@@ -32,7 +33,7 @@
       font-weight: 900;
       opacity: 0.4;
       position: absolute;
-      bottom: 0%;
+      bottom: -2rem;
       right: 45px;
       font-size: 12rem;
       color: $color__brand-primary;

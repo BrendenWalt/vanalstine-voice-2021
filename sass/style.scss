@@ -107,6 +107,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 /* Template Parts
 --------------------------------------------- */
+@import "components/template-parts/site-contact-forms";
+
 @import "components/template-parts/home-hero";
 @import "components/template-parts/home-benefits";
 @import "components/template-parts/home-video";
@@ -115,3 +117,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import "components/template-parts/home-about";
 @import "components/template-parts/home-testimonials";
 @import "components/template-parts/home-ig-feed";
+
+
+@import "components/template-parts/faqs";

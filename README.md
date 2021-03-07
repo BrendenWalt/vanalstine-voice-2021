@@ -16,6 +16,7 @@ Required Plugins
 * Autoptimize
 * smush
 * WP Super Cache
+* Smash Balloon Social Feed
 * WP Migrate DB
 
 Based off of a theme called `_s`, or `underscores`, if you like. I'm a theme meant for hacking so don't use me as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
