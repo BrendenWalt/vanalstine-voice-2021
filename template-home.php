@@ -17,6 +17,7 @@ get_header();
 			get_template_part('template-parts/content-home','about');
 			get_template_part('template-parts/content-home','cta-banner');
 			get_template_part('template-parts/content-home','testimonials');
+			get_template_part('template-parts/content-home','contact');
 			get_template_part('template-parts/content-home','ig-feed');
 		?>
 
