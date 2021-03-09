@@ -1151,6 +1151,34 @@ textarea.wpcf7-form-control {
 	width: 100%;
 }
 
+input[type="submit"].wpcf7-form-control {
+	background-color: #FFBFD6;
+	display: block;
+	border: 0;
+	border-radius: 0;
+	font-weight: bold;
+	padding: 10px 40px;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	transition: all 0.2s ease-in-out;
+	cursor: pointer;
+}
+
+input[type="submit"].wpcf7-form-control:hover {
+	background-color: #ff96bc;
+}
+
+input[type="submit"].wpcf7-form-control:visited {
+	color: #ffffff;
+}
+
+input[type="submit"].wpcf7-form-control:focus {
+	border: none;
+	outline: none;
+	box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
 .home-hero {
 	height: calc(98vh - 13vh);
 	display: flex;

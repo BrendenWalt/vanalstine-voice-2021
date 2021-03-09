@@ -11,3 +11,6 @@ textarea.wpcf7-form-control {
 .wpcf7-form-control-wrap input {
   width: 100%;
 }
+input[type="submit"].wpcf7-form-control {
+  @include cta-primary;
+}
