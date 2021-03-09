@@ -1,0 +1,13 @@
+.home-contact-form-section {
+  .content-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    .home-contact-image {
+      flex: 50%;
+    }
+    .home-contact-form {
+      flex: 50%;
+    }
+  }
+}

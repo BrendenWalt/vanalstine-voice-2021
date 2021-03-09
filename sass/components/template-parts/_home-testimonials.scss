@@ -1,5 +1,6 @@
 .home-testimonials {
   position: relative;
+  padding: 140px 0px;
   h4 {
     text-align: center;
     font-size: 36px;
@@ -13,7 +14,7 @@
   }
   .carousel-container {
     max-width: 1200px;
-    margin: 140px auto;
+    margin: 0px auto;
     position: relative;
     &:before {
       content:'\f10d';

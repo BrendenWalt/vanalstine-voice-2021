@@ -1147,6 +1147,10 @@ textarea.wpcf7-form-control {
 	border-bottom: 1px solid #000;
 }
 
+.wpcf7-form-control-wrap input {
+	width: 100%;
+}
+
 .home-hero {
 	height: calc(98vh - 13vh);
 	display: flex;
@@ -1177,7 +1181,7 @@ textarea.wpcf7-form-control {
 	max-height: 100vh;
 	align-items: center;
 	max-width: 1600px;
-	padding: 0px 5%;
+	width: 90%;
 	height: 100%;
 }
 
@@ -1203,6 +1207,32 @@ textarea.wpcf7-form-control {
 
 .home-hero .home-site-title {
 	word-spacing: 900px;
+}
+
+.home-hero .home-site-tagline {
+	font-style: italic;
+	margin-left: -0.5em;
+	position: relative;
+	display: inline-block;
+	padding-bottom: 15px;
+}
+
+.home-hero .home-site-tagline:before {
+	content: '';
+	width: 115%;
+	border-bottom: 2px solid #FFBFD6;
+	position: absolute;
+	bottom: 0px;
+	right: -35%;
+}
+
+.home-hero .home-site-tagline:after {
+	content: '';
+	width: 115%;
+	border-bottom: 2px solid #FFBFD6;
+	position: absolute;
+	bottom: calc(0px - 8px);
+	right: calc(-35% - 20%);
 }
 
 .home-benefits {
@@ -1438,6 +1468,7 @@ textarea.wpcf7-form-control {
 
 .home-testimonials {
 	position: relative;
+	padding: 140px 0px;
 }
 
 .home-testimonials h4 {
@@ -1458,7 +1489,7 @@ textarea.wpcf7-form-control {
 
 .home-testimonials .carousel-container {
 	max-width: 1200px;
-	margin: 140px auto;
+	margin: 0px auto;
 	position: relative;
 }
 
@@ -1556,6 +1587,20 @@ textarea.wpcf7-form-control {
 .home-testimonials .content-container.swiper-container .testimonial-nav.swiper-button-next:focus {
 	border: 0;
 	outline: none;
+}
+
+.home-contact-form-section .content-container {
+	display: flex;
+	flex-direction: row;
+	position: relative;
+}
+
+.home-contact-form-section .content-container .home-contact-image {
+	flex: 50%;
+}
+
+.home-contact-form-section .content-container .home-contact-form {
+	flex: 50%;
 }
 
 .home-ig-feed #sb_instagram.sbi {

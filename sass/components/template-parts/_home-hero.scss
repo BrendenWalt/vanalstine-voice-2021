@@ -27,7 +27,7 @@
     max-height: 100vh;
     align-items: center;
     max-width: $content_max-width;
-    padding: 0px 5%;
+    width: 90%;
     height: 100%;
   }
   .home-hero-headshot {
@@ -50,6 +50,29 @@
     word-spacing: 900px;
     h1 {
       // padding: 10px 15px;
+    }
+  }
+  .home-site-tagline {
+    font-style: italic;
+    margin-left: -0.5em;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 15px;
+    &:before {
+      content: '';
+      width: 115%;
+      border-bottom: 2px solid $color__brand-primary;
+      position: absolute;
+      bottom: 0px;
+      right: -35%;
+    }
+    &:after {
+      content: '';
+      width: 115%;
+      border-bottom: 2px solid $color__brand-primary;
+      position: absolute;
+      bottom: calc(0px - 8px);
+      right: calc(-35% - 20%);
     }
   }
 }
