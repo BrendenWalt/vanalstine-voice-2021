@@ -1,4 +1,18 @@
 .home-ig-feed {
+  margin-top: 65px;
+  .ig-title-card {
+    border: 3px solid $color__brand-primary;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1100px;
+    h3 {
+      color: $color__brand-primary;
+      font-family: $font-primary;
+      font-size: 2.0rem;
+      text-align: center;
+    }
+  }
+
   #sb_instagram.sbi {
     padding-bottom: 0px !important;
 
@@ -6,6 +20,24 @@
       // padding-bottom: 0px !important;
   
       .sbi_item {
+       .sbi_photo {
+        position: relative;
+         &:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: $color__brand-primary;
+          background-image: linear-gradient(145deg, $color__brand-primary 40%, $color__brand-secondary 100%);
+          opacity: 0;
+          transition: opacity 0.2s ease-in-out;
+         }  
+        &:hover:before {
+          opacity: 0.4;
+        }
+       }
        
       }
     }
