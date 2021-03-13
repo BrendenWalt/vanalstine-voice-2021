@@ -16,29 +16,26 @@
     max-width: 1200px;
     margin: 0px auto;
     position: relative;
-    &:before {
-      content:'\f10d';
+    &:before,
+    &:after {
       font-family: "Font Awesome 5 Free";
       font-weight: 900;
-      opacity: 0.4;
+      opacity: 0.2;
       position: absolute;
-      top: -9rem;
-      left: 45px;
       font-size: 12rem;
       color: $color__brand-primary;
       z-index: -1;
     }
+    &:before {
+      content:'\f10d';
+      top: -9rem;
+      left: 45px;
+      
+    }
     &:after {
       content:'\f10e';
-      font-family: "Font Awesome 5 Free";
-      font-weight: 900;
-      opacity: 0.4;
-      position: absolute;
       bottom: -2rem;
       right: 45px;
-      font-size: 12rem;
-      color: $color__brand-primary;
-      z-index: -1;
     }
   }
   
