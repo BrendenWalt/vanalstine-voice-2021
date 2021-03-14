@@ -3,10 +3,13 @@
   background: linear-gradient(180deg, $color__brand-secondary 50%, rgba(255,255,255,1) 50%);
   padding: 0px 5%;
   margin-top: 0px;
+  text-align: center;
   h2 {
     color: $color__text-white;
+    display: inline-block;
     margin-top: 0px;
-    text-align: center;
+    position: relative;
+    @include fancy-divider;
   }
   h3 {
     font-size: 3rem;

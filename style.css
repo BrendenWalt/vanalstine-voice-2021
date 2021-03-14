@@ -1397,6 +1397,24 @@ input[type="submit"].wpcf7-form-control:focus {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
+	position: relative;
+}
+
+.home-video .home-video-container:before, .home-video .home-video-container:after {
+	content: '';
+	border-left: 2px solid #FFBFD6;
+	position: absolute;
+	height: 80%;
+}
+
+.home-video .home-video-container:before {
+	top: 0px;
+	left: 0px;
+}
+
+.home-video .home-video-container:after {
+	top: 25px;
+	left: calc(0px + 8px);
 }
 
 .home-video .video {
@@ -1412,12 +1430,32 @@ input[type="submit"].wpcf7-form-control:focus {
 	background: linear-gradient(180deg, #3283C7 50%, white 50%);
 	padding: 0px 5%;
 	margin-top: 0px;
+	text-align: center;
 }
 
 .home-programs h2 {
 	color: #ffffff;
+	display: inline-block;
 	margin-top: 0px;
-	text-align: center;
+	position: relative;
+}
+
+.home-programs h2:before {
+	content: '';
+	width: 115%;
+	border-bottom: 2px solid #FFBFD6;
+	position: absolute;
+	bottom: 0px;
+	right: -35%;
+}
+
+.home-programs h2:after {
+	content: '';
+	width: 115%;
+	border-bottom: 2px solid #FFBFD6;
+	position: absolute;
+	bottom: calc(0px - 8px);
+	right: calc(-35% - 20%);
 }
 
 .home-programs h3 {

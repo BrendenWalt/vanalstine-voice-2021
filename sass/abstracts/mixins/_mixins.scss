@@ -37,3 +37,40 @@
 		box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
 	}
 }
+
+@mixin fancy-divider {
+	&:before {
+		content: '';
+		width: 115%;
+		border-bottom: 2px solid $color__brand-primary;
+		position: absolute;
+		bottom: 0px;
+		right: -35%;
+	}
+	&:after {
+		content: '';
+		width: 115%;
+		border-bottom: 2px solid $color__brand-primary;
+		position: absolute;
+		bottom: calc(0px - 8px);
+		right: calc(-35% - 20%);
+	}
+}
+
+@mixin fancy-divider-vert {
+	&:before,
+	&:after {
+		content: '';
+		border-left: 2px solid $color__brand-primary;
+		position: absolute;
+		height: 80%;
+	}
+	&:before {
+		top: 0px;
+		left: 0px;
+	}
+	&:after {
+		top: 25px;
+		left: calc(0px + 8px);
+	}
+}
