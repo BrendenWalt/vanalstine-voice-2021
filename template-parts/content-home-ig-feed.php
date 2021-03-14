@@ -5,7 +5,7 @@
 <section class="home-ig-feed">
   <div class="ig-feed-container">
     <div class="ig-title-card">
-      <i></i>
+      <i class></i>
       <h3>Lorem ipsum dolor sit amet.</h3>
     </div>
     <div class="ig-feed-items">

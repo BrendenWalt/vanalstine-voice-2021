@@ -14,9 +14,8 @@ textarea.wpcf7-form-control {
   border-radius: 0;
   border-bottom: 1px solid $color__text-primary;
   &:focus {
-    // outline: 2px solid $color__brand-primary;
     outline: none;
-    box-shadow: 0 0 3px 2px $color__brand-primary;
+    box-shadow: 0 0 3px 2px $color__brand-secondary;
     border-radius: 4px; 
     border-bottom: none;
   }

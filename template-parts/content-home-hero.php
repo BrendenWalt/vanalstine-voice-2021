@@ -14,7 +14,9 @@
     <div class="home-hero-text-content">
       <div class="home-site-title">
         <h1>
-          <?php echo(get_bloginfo('name')); ?>
+          <span>
+            <?php echo(get_bloginfo('name')); ?>
+          </span>
         </h1>
       </div>
       <div class="home-site-tagline">
@@ -24,6 +26,7 @@
     </div>
     <div class="home-hero-scroll-indicator">
       <p>Learn More</p>
+      <img src="<?php bloginfo('stylesheet_directory')?>/assets/icons/arrow-down-02.svg" />
     </div>
     
   </div>

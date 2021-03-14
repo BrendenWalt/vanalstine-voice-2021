@@ -4,52 +4,76 @@
   display: flex;
   align-items: center;
   margin-top: $header-offset;
-  h1 {
-    // background-color: $color__brand-primary;
-    color: $color__text-white;
-    font-size: 6em;
-    text-align: right;
-    line-height: 105%;
-    width: min-intrinsic;
-    width: -webkit-min-content;
-    width: -moz-min-content;
-    width: min-content;
-    display: table-caption;
-    display: -ms-grid;
-    -ms-grid-columns: min-content;
-    background-color: #343132;
-    box-shadow: 0.5em 0 0 #343132,-0.5em 0 0 #343132;
+  
+  .home-site-title  {
+    h1 {
+      // background-color: $color__brand-primary;
+      color: $color__text-white;
+      font-family: $font-primary;
+      font-size: 6em;
+      text-align: right;
+      line-height:100%;
+      width: min-intrinsic;
+      width: -webkit-min-content;
+      width: -moz-min-content;
+      width: min-content;
+      display: inline-block;
+      -ms-grid-columns: min-content;
+      // font-variant: small-caps;
+      text-transform: uppercase;
+    }
+    span {
+      background-color: $color__brand-primary;
+      box-shadow: 0.5em 0 0 $color__brand-primary,-0.5em 0 0 $color__brand-primary;
+      padding: 10px 0px;
+      vertical-align: middle;
+      &:first-line {
+        line-height: 85%;
+        border: 2px solid #ff0000;
+      }
+    }
   }
   .home-hero-container {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin: 0 auto;
     max-height: 100vh;
     align-items: center;
     max-width: $content_max-width;
     width: 90%;
     height: 100%;
+    position: relative;
   }
   .home-hero-headshot {
+    position: absolute;
     height: 100%;
+    right: 0;
+    z-index: -1;
+    width: 45%;
     img {
       max-height: 100%;
       height: 100%;
       object-fit: cover;
+      width: 100%;
     }
-  }
-  .home-hero-text-content {
-    margin-right: -5vw;
   }
   .home-hero-scroll-indicator {
     position: absolute;
-    bottom: 0;
-    right: 50%;
-  }
-  .home-site-title {
-    word-spacing: 900px;
-    h1 {
-      // padding: 10px 15px;
+    bottom: 0px;
+    text-align: center;
+    p {
+      margin-bottom: 2px;
+    }
+    img {
+      width: 20px;
+      opacity: 0.5;
+      animation-duration: 2s;
+      animation-delay: 1.5s;
+      animation-iteration-count: infinite;
+      animation-name: bounce-2;
+      animation-timing-function: none;
     }
   }
   .home-site-tagline {
