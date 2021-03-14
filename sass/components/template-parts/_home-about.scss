@@ -10,6 +10,7 @@
     width: 45%;
     max-width: 620px;
     img {
+      object-fit: cover;
       width: 100%;
     }
   }
@@ -23,7 +24,8 @@
       padding: 35px 35px 35px 70px;
     }
     h2 {
-      color: $color__text-white;
+      // text-shadow: -2px -2px $color__text-white;
+      color: $color__brand-secondary;
       margin: 0;
       position: absolute;
       left: 25px;

@@ -8,6 +8,18 @@ section {
   margin: 0 auto;
 }
 
+// TYPOGRAPHY
+h1,
+h2,
+h3,
+h4 {
+  font-family: $font-primary;
+}
+
+h2 {
+  font-size: 3.75rem;
+}
+
 
 // BUTTON STYLES
 .cta-primary {
