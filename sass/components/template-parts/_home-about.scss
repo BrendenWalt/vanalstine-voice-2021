@@ -25,12 +25,15 @@
     }
     h2 {
       // text-shadow: -2px -2px $color__text-white;
-      color: $color__brand-secondary;
+      background-color: $color__white;
+      color: $color__brand-primary;
       margin: 0;
+      line-height: 1em;
       position: absolute;
-      left: 25px;
+      left: 0px;
       top: 0;
       transform: translateY(-60%);
+      padding: 5px 20px;
     }
     p {
       margin: 0;
