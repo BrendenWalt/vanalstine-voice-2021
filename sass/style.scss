@@ -85,6 +85,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Plugins
 --------------------------------------------------------------*/
 
+/* Jetpack infinite scroll
+--------------------------------------------- */
+// @import "plugins/jetpack/infinite-scroll";
+
 /*--------------------------------------------------------------
 # Utilities
 --------------------------------------------------------------*/
@@ -100,3 +104,20 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /* Generic Theme Styles
 --------------------------------------------- */
 @import "generic/theme-styles";
+
+/* Template Parts
+--------------------------------------------- */
+@import "components/template-parts/site-contact-forms";
+
+@import "components/template-parts/home-hero";
+@import "components/template-parts/home-benefits";
+@import "components/template-parts/home-video";
+@import "components/template-parts/home-programs";
+@import "components/template-parts/home-cta-banner";
+@import "components/template-parts/home-about";
+@import "components/template-parts/home-testimonials";
+@import "components/template-parts/home-contact-form";
+@import "components/template-parts/home-ig-feed";
+
+
+@import "components/template-parts/faqs";
