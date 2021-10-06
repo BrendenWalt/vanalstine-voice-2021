@@ -207,3 +207,8 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 }
 // ACF Groups
 include_once(get_template_directory().'/inc/acf-groups.php');
+
+/**
+ * Load CMB2
+ */
+require_once(dirname(__FILE__) . '/inc/cmb2-functions.php');
