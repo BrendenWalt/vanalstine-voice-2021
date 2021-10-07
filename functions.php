@@ -157,9 +157,9 @@ add_action( 'widgets_init', 'vanalstine_voice_widgets_init' );
  */
 function vanalstine_voice_scripts() {
 	// UI Kit
-	wp_enqueue_style( 'uikit', '/assets/uikit/css/uikit.min.css' );
-	wp_enqueue_script( 'uikit', '/assets/uikit/js/uikit.min.js', array( 'jquery' ), '3.0.0.30', true );
-	wp_enqueue_script( 'uikit-icons', '/assets/uikit/js/uikit-icons.min.js', array( 'jquery' ), '3.0.0.30', true );
+	wp_enqueue_style( 'uikit', get_template_directory_uri() . '/assets/uikit/css/uikit.min.css' );
+	wp_enqueue_script( 'uikit', get_template_directory_uri() . '/assets/uikit/js/uikit.min.js', array( 'jquery' ), '3.0.0.30', true );
+	wp_enqueue_script( 'uikit-icons', get_template_directory_uri() . '/assets/uikit/js/uikit-icons.min.js', array( 'jquery' ), '3.0.0.30', true );
 
 	wp_enqueue_style( 'vanalstine-voice-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'vanalstine-voice-style', 'rtl', 'replace' );

@@ -72,3 +72,9 @@
 		</div>
 		
 	</header><!-- #masthead -->
+
+	<div style="position: absolute; top: 100; right: 0; z-index: 300">
+		<a href=".vv-site-header" uk-scroll>
+			<span style="background-color: #0000ff; width: 50px; height: 50px; display: block;" uk-icon="icon: chevron-up"></span>
+		</a>
+	</div>
