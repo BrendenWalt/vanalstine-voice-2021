@@ -35,6 +35,7 @@ h2 {
   transition: all 0.2s ease-in-out;
   cursor: pointer;
   &:hover {
+    text-decoration: none;
     color: $color__text-white;
     background-color: darken($color__brand-primary, 8%);
   }

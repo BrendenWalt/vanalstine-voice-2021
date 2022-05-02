@@ -73,8 +73,8 @@
 		
 	</header><!-- #masthead -->
 
-	<div style="position: absolute; top: 100; right: 0; z-index: 300">
+	<div class="uk-position-bottom-right uk-position-fixed" style="z-index: 300">
 		<a href=".vv-site-header" uk-scroll>
-			<span style="background-color: #0000ff; width: 50px; height: 50px; display: block;" uk-icon="icon: chevron-up"></span>
+			<span class="uk-text-center" uk-icon="icon: chevron-up; ratio: 1.75"></span>
 		</a>
 	</div>
