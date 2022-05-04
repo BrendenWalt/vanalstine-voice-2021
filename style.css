@@ -852,7 +852,8 @@ nav ul li a:hover {
 }
 
 .site-footer {
-	background-color: #EAEAEA;
+	background-color: #ffffff;
+	margin: 40px 0px 20px;
 	padding: 10px;
 }
 
@@ -865,12 +866,23 @@ nav ul li a:hover {
 	justify-content: center;
 }
 
+.site-footer .container p {
+	margin: 0;
+}
+
+.site-footer .container .copyright {
+	font-size: 14px;
+	font-style: italic;
+	color: #707070;
+	align-self: flex-end;
+}
+
 .site-footer .container .left, .site-footer .container .right {
 	flex: 1;
 }
 
-.site-footer .footer-info p {
-	margin: 0;
+.site-footer .footer-info .site-branding {
+	margin-bottom: 15px;
 }
 
 .site-footer .footer-social-menu {
