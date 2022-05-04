@@ -1114,6 +1114,10 @@ h2 {
 	line-height: 1.75em;
 }
 
+a:hover {
+	text-decoration: none;
+}
+
 .cta-primary {
 	background-color: #FFBFD6;
 	padding: 10px 40px;
@@ -1128,6 +1132,7 @@ h2 {
 }
 
 .cta-primary:hover {
+	text-decoration: none;
 	color: #ffffff;
 	background-color: #ff96bc;
 }
