@@ -1,25 +1,18 @@
 .home-hero {
-  $header-offset: 13vh;
-  height:calc(98vh - #{$header-offset});
+  $header-offset: 109px;
+  height:calc(100vh - #{$header-offset});
   display: flex;
-  align-items: center;
+  align-items: baseline;
   margin-top: $header-offset;
+  margin-bottom: 0;
   
   .home-site-title  {
     h1 {
-      // background-color: $color__brand-primary;
       color: $color__text-white;
       font-family: $font-primary;
-      font-size: 6em;
+      font-size: 8em;
       text-align: right;
       line-height:100%;
-      width: min-intrinsic;
-      width: -webkit-min-content;
-      width: -moz-min-content;
-      width: min-content;
-      display: inline-block;
-      -ms-grid-columns: min-content;
-      // font-variant: small-caps;
       text-transform: uppercase;
     }
     span {
@@ -40,9 +33,8 @@
     justify-content: center;
     margin: 0 auto;
     max-height: 100vh;
-    align-items: center;
-    max-width: $content_max-width;
-    width: 90%;
+    // max-width: $content_max-width;
+    width: 100%;
     height: 100%;
     position: relative;
   }
@@ -50,18 +42,20 @@
     position: absolute;
     height: 100%;
     right: 0;
-    z-index: -1;
+    z-index: 0;
     width: 45%;
+    text-align: right;
     img {
       max-height: 100%;
       height: 100%;
       object-fit: cover;
       width: 100%;
+      max-width: 780px;
     }
   }
   .home-hero-scroll-indicator {
     position: absolute;
-    bottom: 0px;
+    bottom: 2vh;
     text-align: center;
     p {
       margin-bottom: 2px;
@@ -75,6 +69,10 @@
       animation-name: bounce-2;
       animation-timing-function: none;
     }
+  }
+  .home-hero-text-content {
+    margin-top: -15vh;
+    z-index: 2;
   }
   .home-site-tagline {
     font-style: italic;

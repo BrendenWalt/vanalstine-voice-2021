@@ -7,7 +7,8 @@
   <div class="home-hero-container">
     <div class="home-hero-headshot">
       <?php if(!empty($hero_image)): ?>
-        <img src="<?php echo($hero_image['url']); ?>" alt="<?php echo($hero_image['alt']); ?>" />
+        <!-- <img src="<?php echo($hero_image['url']); ?>" alt="<?php echo($hero_image['alt']); ?>" /> -->
+        <img src="https://via.placeholder.com/720x850" alt="">
       <?php endif; ?>
     </div>
 
@@ -15,7 +16,7 @@
       <div class="home-site-title">
         <h1>
           <span>
-            <?php echo(get_bloginfo('name')); ?>
+            <?php echo str_replace(' ', '<br/>', get_bloginfo('name')); ?>
           </span>
         </h1>
       </div>

@@ -1237,24 +1237,19 @@ input[type="submit"].wpcf7-form-control:focus {
 }
 
 .home-hero {
-	height: calc(98vh - 13vh);
+	height: calc(100vh - 109px);
 	display: flex;
-	align-items: center;
-	margin-top: 13vh;
+	align-items: baseline;
+	margin-top: 109px;
+	margin-bottom: 0;
 }
 
 .home-hero .home-site-title h1 {
 	color: #ffffff;
 	font-family: "Glacial Indifference", sans-serif;
-	font-size: 6em;
+	font-size: 8em;
 	text-align: right;
 	line-height: 100%;
-	width: min-intrinsic;
-	width: -webkit-min-content;
-	width: -moz-min-content;
-	width: min-content;
-	display: inline-block;
-	-ms-grid-columns: min-content;
 	text-transform: uppercase;
 }
 
@@ -1277,9 +1272,7 @@ input[type="submit"].wpcf7-form-control:focus {
 	justify-content: center;
 	margin: 0 auto;
 	max-height: 100vh;
-	align-items: center;
-	max-width: 1600px;
-	width: 90%;
+	width: 100%;
 	height: 100%;
 	position: relative;
 }
@@ -1288,8 +1281,9 @@ input[type="submit"].wpcf7-form-control:focus {
 	position: absolute;
 	height: 100%;
 	right: 0;
-	z-index: -1;
+	z-index: 0;
 	width: 45%;
+	text-align: right;
 }
 
 .home-hero .home-hero-headshot img {
@@ -1297,11 +1291,12 @@ input[type="submit"].wpcf7-form-control:focus {
 	height: 100%;
 	object-fit: cover;
 	width: 100%;
+	max-width: 780px;
 }
 
 .home-hero .home-hero-scroll-indicator {
 	position: absolute;
-	bottom: 0px;
+	bottom: 2vh;
 	text-align: center;
 }
 
@@ -1317,6 +1312,11 @@ input[type="submit"].wpcf7-form-control:focus {
 	animation-iteration-count: infinite;
 	animation-name: bounce-2;
 	animation-timing-function: none;
+}
+
+.home-hero .home-hero-text-content {
+	margin-top: -15vh;
+	z-index: 2;
 }
 
 .home-hero .home-site-tagline {
