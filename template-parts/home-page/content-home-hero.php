@@ -16,7 +16,7 @@
       <div class="home-site-title">
         <h1>
           <span>
-            <?php echo str_replace(' ', '<br/>', get_bloginfo('name')); ?>
+            <?php echo str_replace(' ', '</span><br/><span>', get_bloginfo('name')); ?>
           </span>
         </h1>
       </div>

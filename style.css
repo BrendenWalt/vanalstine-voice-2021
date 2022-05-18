@@ -1255,14 +1255,13 @@ input[type="submit"].wpcf7-form-control:focus {
 
 .home-hero .home-site-title span {
 	background-color: #FFBFD6;
-	box-shadow: 0.5em 0 0 #FFBFD6, -0.5em 0 0 #FFBFD6;
-	padding: 10px 0px;
+	padding: 10px 40px;
 	vertical-align: middle;
 }
 
-.home-hero .home-site-title span:first-line {
+.home-hero .home-site-title span:first-child {
 	line-height: 85%;
-	border: 2px solid #ff0000;
+	margin-right: 100px;
 }
 
 .home-hero .home-hero-container {
@@ -1316,6 +1315,7 @@ input[type="submit"].wpcf7-form-control:focus {
 
 .home-hero .home-hero-text-content {
 	margin-top: -15vh;
+	margin-right: 5vw;
 	z-index: 2;
 }
 

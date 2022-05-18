@@ -17,12 +17,12 @@
     }
     span {
       background-color: $color__brand-primary;
-      box-shadow: 0.5em 0 0 $color__brand-primary,-0.5em 0 0 $color__brand-primary;
-      padding: 10px 0px;
+      // box-shadow: 0.5em 0 0 $color__brand-primary,-0.5em 0 0 $color__brand-primary;
+      padding: 10px 40px;
       vertical-align: middle;
-      &:first-line {
+      &:first-child {
         line-height: 85%;
-        border: 2px solid #ff0000;
+        margin-right: 100px;
       }
     }
   }
@@ -72,6 +72,7 @@
   }
   .home-hero-text-content {
     margin-top: -15vh;
+    margin-right: 5vw;
     z-index: 2;
   }
   .home-site-tagline {
