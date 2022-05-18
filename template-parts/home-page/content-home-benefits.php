@@ -5,9 +5,29 @@
 
 <section class="home-benefits">
   <div class="home-benefits-container">
-    <div class="home-benefits-cards-container">
+    <div uk-scrollspy="target: > div; cls:uk-animation-fade uk-animation-slide-bottom-medium; delay: 200" class="home-benefits-cards-container">
       <!-- Card 1 -->
       <div class="home-benefit-card">
+        <div class="home-benefit-icon">
+          <img src="" alt="">
+        </div>
+        <div class="home-benefit-card-text">
+          <h3>Lorem ipsum dolor sit</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta vel odit consequuntur commodi quis nulla quasi praesentium voluptatem saepe</p>
+        </div>
+      </div>
+      <!-- Card 1 -->
+      <div  class="home-benefit-card">
+        <div class="home-benefit-icon">
+          <img src="" alt="">
+        </div>
+        <div class="home-benefit-card-text">
+          <h3>Lorem ipsum dolor sit</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta vel odit consequuntur commodi quis nulla quasi praesentium voluptatem saepe</p>
+        </div>
+      </div>
+      <!-- Card 1 -->
+      <div  class="home-benefit-card">
         <div class="home-benefit-icon">
           <img src="" alt="">
         </div>
