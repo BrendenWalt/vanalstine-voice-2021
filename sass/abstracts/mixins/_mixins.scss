@@ -74,3 +74,11 @@
 		left: calc(0px + 8px);
 	}
 }
+
+@mixin standard-text-block {
+	color: $color__text-primary;
+	line-height: 1.6rem;
+	font-family: $font-primary;
+	font-weight: 300;
+	font-size: 16px;
+}
