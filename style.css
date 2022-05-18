@@ -1175,7 +1175,7 @@ form.wpcf7-form {
 }
 
 form.wpcf7-form label {
-	font-family: "Glacial Indifference", sans-serif;
+	font-family: "Open Sans", Tahoma, Helvetica, sans-serif;
 	font-size: 1.25rem;
 	color: #707070;
 }
@@ -1395,7 +1395,7 @@ input[type="submit"].wpcf7-form-control:focus {
 }
 
 .home-video {
-	padding: 45px 5%;
+	padding: 45px 3%;
 }
 
 .home-video .home-video-container {
@@ -1406,29 +1406,37 @@ input[type="submit"].wpcf7-form-control:focus {
 	position: relative;
 }
 
-.home-video .home-video-container:before, .home-video .home-video-container:after {
+.home-video .video {
+	width: 50%;
+	padding-right: 50px;
+}
+
+.home-video .video-textarea {
+	color: #707070;
+	line-height: 1.6rem;
+	font-family: "Open Sans", Tahoma, Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	padding: 50px;
+	position: relative;
+	width: 50%;
+}
+
+.home-video .video-textarea:before, .home-video .video-textarea:after {
 	content: '';
 	border-left: 2px solid #FFBFD6;
 	position: absolute;
 	height: 80%;
 }
 
-.home-video .home-video-container:before {
+.home-video .video-textarea:before {
 	top: 0px;
 	left: 0px;
 }
 
-.home-video .home-video-container:after {
+.home-video .video-textarea:after {
 	top: 25px;
 	left: calc(0px + 8px);
-}
-
-.home-video .video {
-	width: 50%;
-}
-
-.home-video .video-textarea {
-	width: 50%;
 }
 
 .home-programs {

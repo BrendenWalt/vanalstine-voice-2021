@@ -1,17 +1,21 @@
 .home-video {
-  padding: 45px 5%;
+  padding: 45px 3%;
   .home-video-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     position: relative;
-    @include fancy-divider-vert;
   }
   .video {
     width: 50%;
+    padding-right: 50px;
   }
   .video-textarea {
+    @include standard-text-block;
+    padding: 50px;
+    position: relative;
     width: 50%;
+    @include fancy-divider-vert;
   }
 }
