@@ -1247,15 +1247,21 @@ input[type="submit"].wpcf7-form-control:focus {
 .home-hero .home-site-title h1 {
 	color: #ffffff;
 	font-family: "Glacial Indifference", sans-serif;
-	font-size: 8em;
+	font-size: 7em;
 	text-align: right;
 	line-height: 100%;
 	text-transform: uppercase;
 }
 
+@media (max-width: 1199px) {
+	.home-hero .home-site-title h1 {
+		font-size: 5.5em;
+	}
+}
+
 .home-hero .home-site-title span {
 	background-color: #FFBFD6;
-	padding: 10px 40px;
+	padding: 0px 40px;
 	vertical-align: middle;
 }
 
