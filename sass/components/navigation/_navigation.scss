@@ -205,6 +205,7 @@ nav ul {
 // Theme Footer
 .site-footer {
 	background-color: $color__background-footer;
+	margin: 40px 0px 20px;
 	padding: 10px;
 	.container {
 		max-width: $content_max-width;
@@ -213,13 +214,22 @@ nav ul {
 		align-items: center;
 		flex-direction: row;
 		justify-content: center;
+		p {
+			margin: 0;
+		}
+		.copyright {
+			font-size: 14px;
+			font-style: italic;
+			color: $color__text-primary;
+			align-self: flex-end;
+		}
 		.left, .right {
 			flex: 1;
 		}
 	}
 	.footer-info {
-		p {
-			margin: 0;
+		.site-branding {
+			margin-bottom: 15px;
 		}
 	}
 	

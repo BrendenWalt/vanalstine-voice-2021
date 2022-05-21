@@ -13,8 +13,13 @@
 
 	<footer class="site-footer">
 		<div class="container">
-			<div class="left"></div>
+			<div class="left copyright">
+				<p>&copy; <?php echo(date('Y')); ?> <?php echo(get_bloginfo('name')); ?>. All Rights Reserved</p>
+			</div>
 			<div class="footer-info">
+				
+				
+				
 				<!-- Center -->
 				<div class="site-branding">
 					<?php if(!has_custom_logo()) { ?>
@@ -23,9 +28,7 @@
 						the_custom_logo();
 					}?>
 				</div><!-- .site-branding -->
-				<div>
-					<p>&copy; <?php echo(date('Y')); ?> <?php echo(get_bloginfo('name')); ?>. All Rights Reserved</p>
-				</div>
+				
 			</div>
 			<div class="right footer-social-menu">
 				<?php
