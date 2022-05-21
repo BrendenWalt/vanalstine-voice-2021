@@ -1,11 +1,15 @@
 <?php
-
+ $about_image           = get_field('about_image');
 ?>
 
 <section class="home-about">
   <div class="content-container">
     <div class="home-about-img">
-      <img src="https://via.placeholder.com/620x720" alt="">
+      <?php if(!empty($about_image)) { ?>
+        <img src="https://via.placeholder.com/620x720" alt="">
+      <?php } else { ?>
+        <img src="https://via.placeholder.com/620x720/ff00ff" alt="">
+      <?php } ?>
     </div>
     <div class="home-about-text-container">
       <div class="about-box">
