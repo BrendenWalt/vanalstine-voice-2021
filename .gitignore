@@ -5,6 +5,10 @@
 # ignore node dependency directories (used by grunt)
 node_modules/
 
+# ignore main css (remove for prod)
+style.css
+style.css.map
+
 # ignore OS generated files
 ehthumbs.db
 Thumbs.db
