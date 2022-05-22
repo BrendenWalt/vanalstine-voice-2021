@@ -100,4 +100,27 @@
       right: calc(-35% - 20%);
     }
   }
+  .home-social-menu {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    align-items: center;
+    ul {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 2px;
+      margin-left: 20px;
+    }
+    a {
+      padding: 0px 10px;
+    }
+    i {
+      color: $color__brand-secondary;
+      font-size: 30px;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        color: darken($color__brand-secondary, 15%);
+      }
+    }
+  }
 }
