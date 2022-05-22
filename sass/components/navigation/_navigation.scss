@@ -146,8 +146,13 @@ nav ul {
 		margin: 0 auto;
 		max-width: $content-max-width;
 	}
-	.header-left-nav {
-		order: 1;
+	.header-right-nav {
+		display: flex;
+		align-items: center;
+		// order: 1;
+		.header-login {
+			margin-left: 10px;
+		}
 		nav {
 			li {
 				font-size: 18px;
@@ -171,34 +176,44 @@ nav ul {
 		}
 			
 	}
-	.site-branding {
-		order: 2;
-	}
-	.header-right-nav {
-		display: flex;
-		align-items: center;
-		order: 3;
-		.header-login {
-			margin-right: 10px;
-		}
-		i {
-			color: $color__brand-secondary;
-			font-size: 30px;
-			transition: all 0.2s ease-in-out;
-			&:hover {
-				color: darken($color__brand-secondary, 15%);
-			}
-		}
-	}
+	// .header-right-nav {
+	// 	display: flex;
+	// 	align-items: center;
+	// 	order: 3;
+		
+	// 	i {
+	// 		color: $color__brand-secondary;
+	// 		font-size: 30px;
+	// 		transition: all 0.2s ease-in-out;
+	// 		&:hover {
+	// 			color: darken($color__brand-secondary, 15%);
+	// 		}
+	// 	}
+	// }
 }
 
 .site-branding {
 	text-align: center;
 	line-height: 0px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 	img {
 		max-height: 85px;
 		width: auto;
 		display: block;
+	}
+	h2 {
+		color: $color__text-primary;
+		line-height: 100%;
+		text-align: left;
+		font-size: 27px;
+		margin: 0px 0px 0px 20px;
+	}
+	&.top {
+		h2 {
+			visibility: hidden;
+		}
 	}
 }
 

@@ -34,15 +34,18 @@
 
 	<header class="vv-site-header">
 		<div class="content">
-			<div class="site-branding">
+			<div class="site-branding top">
 				<?php if(!has_custom_logo()) { ?>
 					<div class="logo-backup"><?php echo(get_bloginfo('name')); ?></div>
 				<?php } else { 
 					the_custom_logo();
 				}?>
+				<h2>
+					<?php echo str_replace(' ', '</span><br/><span>', get_bloginfo('name')); ?>
+				</h2>
 			</div><!-- .site-branding -->
 
-			<nav class="header-nav header-left-nav">
+			<nav class="header-nav header-right-nav">
 				<?php
 					wp_nav_menu( array(
 						'theme_location'	=>	'header-menu-pages',
@@ -51,6 +54,9 @@
 						'menu_class'			=>	''
 					))
 				?>
+				<div class="header-login">
+						<a class=cta-primary>Login</a>
+				</div>
 				<div class="header-hamburger">
 						<span></span>
 						<span></span>
@@ -59,20 +65,7 @@
 				</div>
 			</nav><!-- #site-navigation -->
 
-			<nav class="header-nav header-right-nav">
-				<div class="header-login">
-						<a class=cta-primary>Login</a>
-				</div>
-				<div class="header-social">
-						<?php
-							wp_nav_menu( array(
-								'theme_location'	=>	'social-menu',
-								'container'				=>	'nav',
-								'container_class'	=>	'navbar-social'
-							))
-						?>
-				</div>
-			</nav>
+			
 		</div>
 		
 	</header><!-- #masthead -->
