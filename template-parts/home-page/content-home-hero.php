@@ -25,19 +25,24 @@
       </div>
       
     </div>
-    <div class="home-hero-scroll-indicator">
-      <p>Learn More</p>
-      <img src="<?php bloginfo('stylesheet_directory')?>/assets/icons/arrow-down-02.svg" />
+
+    <div class="home-hero-bottom-bar">
+      <div class="home-social-menu">
+        <?php
+          wp_nav_menu( array(
+            'theme_location'	=>	'social-menu',
+            'container'				=>	'nav',
+            'container_class'	=>	'home-social-menu'
+          ))
+        ?>
+      </div>
+      <div class="home-hero-scroll-indicator">
+        <p>Learn More</p>
+        <img src="<?php bloginfo('stylesheet_directory')?>/assets/icons/arrow-down-02.svg" />
+      </div>
     </div>
-    <div class="home-social-menu">
-      <?php
-        wp_nav_menu( array(
-          'theme_location'	=>	'social-menu',
-          'container'				=>	'nav',
-          'container_class'	=>	'home-social-menu'
-        ))
-      ?>
-    </div>
+    
+    
     
   </div>
 </section>
