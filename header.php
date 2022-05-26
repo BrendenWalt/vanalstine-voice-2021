@@ -64,7 +64,7 @@
 				<div class="header-mobile-menu uk-navbar-transparent uk-navbar-container">
 					<a href="#offcanvas-slide" class="uk-navbar-toggle uk-icon-link" uk-icon="icon: menu; ratio: 1.5;" uk-toggle></a>
 
-					<div id="offcanvas-slide" uk-offcanvas="flip:true; overlay: true;" class="uk-animation-slide-right">
+					<div id="offcanvas-slide" uk-offcanvas="flip:true; overlay: true;">
 						<div class="uk-offcanvas-bar">
 							<button class="uk-offcanvas-close" type="button" uk-close="ratio: 1.5" ></button>
 							<?php

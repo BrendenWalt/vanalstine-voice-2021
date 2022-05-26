@@ -149,7 +149,9 @@ nav ul {
 	.header-right-nav {
 		.header-login {
 			margin-left: 10px;
+			text-align: right;
 		}
+
 		nav {
 			li {
 				font-size: 18px;
@@ -171,23 +173,29 @@ nav ul {
 				opacity: 1;
 			}
 		}
+
 		.header-menu-desktop {
 			display: flex;
 			align-items: center;
 		}
+
 		.header-mobile-menu {
 			display: none;
-			.navbar-header-links ul {
-				display: flex;
-				flex-direction: column;
-				justify-content: center;
-				li {
-					padding: 30px 10px;
-					a {
-						color: $color__text-main;
-					}
-					&:not(:last-child) {
-						border-bottom: 1px solid $color__background-dark;
+			.navbar-header-links {
+				margin-top: 20px;
+				ul {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					li {
+						padding: 30px 10px;
+						text-align: right;
+						a {
+							color: $color__text-main;
+						}
+						&:not(:last-child) {
+							border-bottom: 1px solid $color__background-dark;
+						}
 					}
 				}
 			}
@@ -197,9 +205,11 @@ nav ul {
 				}
 			}
 			.uk-offcanvas-close {
+				display: block;
 				color: $color__brand-primary;
 			}
 		}
+
 		.uk-offcanvas-bar {
 			background-color: #fff;
 		}
