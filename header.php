@@ -45,25 +45,45 @@
 				</h2>
 			</div><!-- .site-branding -->
 
-			<nav class="header-nav header-right-nav">
-				<?php
-					wp_nav_menu( array(
-						'theme_location'	=>	'header-menu-pages',
-						'container' 			=>	'nav',
-						'container_class'	=>	'navbar-header-links',
-						'menu_class'			=>	''
-					))
-				?>
-				<div class="header-login">
+			<div class="header-nav header-right-nav">
+				<div class="header-menu-desktop">
+					<?php
+						wp_nav_menu( array(
+							'theme_location'	=>	'header-menu-pages',
+							'container' 			=>	'nav',
+							'container_class'	=>	'navbar-header-links',
+							'menu_class'			=>	''
+						))
+					?>
+					<div class="header-login">
 						<a class=cta-primary>Login</a>
+					</div>
 				</div>
-				<div class="header-hamburger">
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
+			
+
+				<div class="header-mobile-menu uk-navbar-transparent uk-navbar-container">
+					<a href="#offcanvas-slide" class="uk-navbar-toggle uk-icon-link" uk-icon="icon: menu; ratio: 1.5;" uk-toggle></a>
+
+					<div id="offcanvas-slide" uk-offcanvas="flip:true; overlay: true;" class="uk-animation-slide-right">
+						<div class="uk-offcanvas-bar">
+							<button class="uk-offcanvas-close" type="button" uk-close="ratio: 1.5" ></button>
+							<?php
+								wp_nav_menu( array(
+									'theme_location'	=>	'header-menu-pages',
+									'container' 			=>	'nav',
+									'container_class'	=>	'navbar-header-links',
+									'menu_class'			=>	''
+								))
+							?>
+							<div class="header-login">
+								<a class=cta-primary>Login</a>
+							</div>
+						</div>
+					</div>
+					
 				</div>
-			</nav><!-- #site-navigation -->
+
+			</div><!-- #site-navigation -->
 
 			
 		</div>
