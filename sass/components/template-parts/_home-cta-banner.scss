@@ -1,15 +1,17 @@
 .home-cta-banner {
-  background-size: cover;
+  background-size: 100%;
   background-attachment: fixed;
   background-position: 50% 50%;
-  background-color: $color__brand-secondary;
+  background-color: #fff;
   display: flex;
   align-items: center;
   padding: 30px 5%;
   margin: 45px 0px;
-  min-height: 250px;
+  min-height: 450px;
   position: relative;
-  
+  &.no-image {
+    background-color: $color__brand-secondary;
+  }
   &:before {
     content: '';
     position: absolute;
@@ -37,6 +39,18 @@
       font-size: 50px;
       line-height: 55px;
       color: $color__text-white;
+    }
+  }
+  @media screen and (max-width: $screen-xs-max) {
+    min-height: 300px;
+    .home-banner-container {
+      flex-direction: column;
+      
+      .cta-container {
+        margin: 0 auto;
+        max-width: 100%;
+        width: auto;
+      }
     }
   }
 }
