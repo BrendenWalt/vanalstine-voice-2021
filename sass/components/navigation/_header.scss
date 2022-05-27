@@ -1,0 +1,138 @@
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	li {
+		display: inline-block;
+		a {
+			text-decoration: none;
+			padding: 10px 15px;
+			color: $color__text-primary;
+			position: relative;
+			&:visited {
+				color: $color__text-primary;
+			}
+			&:hover {
+				color: $color__text-primary;
+			}
+		}
+	}
+}
+
+.vv-site-header {
+	padding: 12px 5%;
+	background-color: rgba(255, 255, 255, 0.5);
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+	.content {
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+		justify-content: space-between;
+		margin: 0 auto;
+		max-width: $content-max-width;
+	}
+	.header-right-nav {
+		.header-login {
+			margin-left: 10px;
+			text-align: right;
+		}
+
+		nav {
+			li {
+				font-size: 18px;
+			}
+			a:before {
+				content: '';
+				position: absolute;
+				left:50%;
+				bottom: 4px;
+				width: calc(100% - 15px);
+				height: 10px;
+				background-color: $color__brand-primary;
+				z-index: -1;
+				transform: translateX(-50%) translateY(-50%);
+				opacity: 0;
+				transition: all 0.2s ease-in-out
+			}
+			a:hover:before, a:active:before {
+				opacity: 1;
+			}
+		}
+
+		.header-menu-desktop {
+			display: flex;
+			align-items: center;
+		}
+
+		.header-mobile-menu {
+			display: none;
+			.navbar-header-links {
+				margin-top: 20px;
+				ul {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					li {
+						padding: 30px 10px;
+						text-align: right;
+						a {
+							color: $color__text-main;
+						}
+						&:not(:last-child) {
+							border-bottom: 1px solid $color__background-dark;
+						}
+					}
+				}
+			}
+			.uk-navbar-toggle {
+				&:visited {
+					color: $color__text-main;
+				}
+			}
+			.uk-offcanvas-close {
+				display: block;
+				color: $color__brand-primary;
+			}
+		}
+
+		.uk-offcanvas-bar {
+			background-color: #fff;
+		}
+		@media screen and (max-width: $screen-xs-max) {
+			.header-mobile-menu {
+				display: block;
+			}
+			.header-menu-desktop {
+				display: none;
+			}
+		}
+	}
+}
+
+.site-branding {
+	text-align: center;
+	line-height: 0px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	img {
+		max-height: 85px;
+		width: auto;
+		display: block;
+	}
+	h2 {
+		color: $color__text-primary;
+		line-height: 100%;
+		text-align: left;
+		font-size: 27px;
+		margin: 0px 0px 0px 20px;
+	}
+	&.top {
+		h2 {
+			visibility: hidden;
+		}
+	}
+}
