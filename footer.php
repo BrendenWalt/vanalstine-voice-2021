@@ -13,24 +13,32 @@
 
 	<footer class="site-footer">
 		<div class="container">
-			<div class="left copyright">
-				<p>&copy; <?php echo(date('Y')); ?> <?php echo(get_bloginfo('name')); ?>. All Rights Reserved</p>
-			</div>
-			<div class="footer-info">
-				
-				
-				
-				<!-- Center -->
-				<div class="site-branding">
+
+			<!-- Center -->
+			<div class="footer-site-branding">
+				<div class="logo">
 					<?php if(!has_custom_logo()) { ?>
 						<div class="logo-backup"><?php echo(get_bloginfo('name')); ?></div>
 					<?php } else { 
 						the_custom_logo();
 					}?>
-				</div><!-- .site-branding -->
-				
+				</div>
+				<h4><?php echo(get_bloginfo('name')); ?></h4>
 			</div>
-			<div class="right footer-social-menu">
+
+			<!-- Footer Menu -->
+			<div class="footer-site-nav">
+				<?php
+					wp_nav_menu( array(
+						'theme_location'	=>	'footer-menu-pages',
+						'container' 			=>	'nav',
+						'container_class'	=>	'navbar-footer-links',
+						'menu_class'			=>	''
+						))
+				?>
+			</div>
+
+			<div class="footer-social-menu">
 				<?php
 					wp_nav_menu( array(
 						'theme_location'	=>	'social-menu',
@@ -40,7 +48,10 @@
 				?>
 			</div>
 			
-		</div><!-- .site-info -->
+		</div><!-- .container -->
+		<div class="footer-copyright">
+			<p>&copy; <?php echo(date('Y')); ?> <?php echo(get_bloginfo('name')); ?>. All Rights Reserved</p>
+		</div>
 	</footer>
 </div><!-- #page -->
 
