@@ -26,6 +26,7 @@
     margin: 0 auto;
     justify-content: center;
     align-items: stretch;
+    @include stack-mobile($screen-xs-max);
   }
   .home-program-card {
     background-color: $color__background-dark;

@@ -5,6 +5,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    @include stack-mobile($screen-xs-max);
   }
   .home-about-img {
     width: 45%;

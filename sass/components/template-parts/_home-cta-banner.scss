@@ -29,6 +29,7 @@
     width: 100%;
     margin: 0 auto;
     z-index: 3;
+    @include stack-mobile($screen-xs-max);
     .cta-container {
       width: 30%;
       text-align: center;

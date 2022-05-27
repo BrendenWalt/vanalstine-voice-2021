@@ -15,6 +15,7 @@
     justify-content: center;
     align-items: flex-start;
     margin-bottom: 4rem;
+    @include stack-mobile($screen-xs-max);
   }
   .home-benefit-card {
     min-width: 150px;
@@ -41,5 +42,9 @@
   }
   .home-benefits-ctas {
     text-align: center;
+    @include stack-mobile($screen-xs-max);
+    @media screen and (max-width: $screen-xs-max) {
+      display: flex;
+    }
   }
 }
