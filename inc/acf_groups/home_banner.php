@@ -17,7 +17,7 @@ acf_add_local_field_group(array(
         'id' => '',
       ),
       'default_value' => 'Ready To Get Started?',
-      'placeholder' => 'Text for Button',
+      'placeholder' => 'Main Headline',
       'maxlength' => '',
       'rows' => '',
       'new_lines' => '',

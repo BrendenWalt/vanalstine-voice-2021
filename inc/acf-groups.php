@@ -19,6 +19,7 @@
     // Contact form
     include 'acf_groups/contact_form.php';
     // Social Media
+    include 'acf_groups/home_ig_feed.php';
     include 'acf_groups/social_media_menu.php';
   endif;
 
