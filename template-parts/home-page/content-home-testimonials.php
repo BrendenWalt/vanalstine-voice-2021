@@ -3,11 +3,29 @@
 ?>
 
 <section class="home-testimonials">
+
+  <?php if( have_rows('testimonial_tab_group')): 
+    $i = 1;
+    
+    while ( have_rows('testimonial_tab_group') ) : the_row();
+      while ( have_rows('testimonial_1')) : the_row();
+      $text = get_sub_field('testimonial_text');
+  ?>
+
+        <div>
+         <?php echo($text); ?>
+        </div>
+        <?php  endwhile; ?>
+    <?php endwhile; ?>
+
+    <?php endif; ?>
+
   <div class="carousel-container">
     <div class="content-container swiper-container">
       
       <div class="testimonials-container swiper-wrapper">
 
+      
         <!-- Testimonial -->
         <blockquote class="testimonial-card-container swiper-slide">
           <div class="slide-content">
