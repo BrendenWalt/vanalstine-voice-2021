@@ -66,7 +66,8 @@ if ( ! function_exists( 'vanalstine_voice_setup' ) ) :
 		register_nav_menus(
 			array(
 				'header-menu-pages' => __( 'Main Header Menu'),
-				'social-menu' => __('Social Menu')
+				'social-menu' => __('Social Menu'),
+				'footer_menu' => __('Footer Menu')
 			)
 		);
 

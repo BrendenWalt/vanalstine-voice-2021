@@ -30,7 +30,7 @@
 			<div class="footer-site-nav">
 				<?php
 					wp_nav_menu( array(
-						'theme_location'	=>	'footer-menu-pages',
+						'theme_location'	=>	'footer_menu',
 						'container' 			=>	'nav',
 						'container_class'	=>	'navbar-footer-links',
 						'menu_class'			=>	''
