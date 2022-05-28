@@ -3,7 +3,7 @@
   margin-bottom: 0px;
   .ig-title-card {
     border: 3px solid $color__brand-primary;
-    margin: 0 auto;
+    margin: 0 auto 30px;
     padding: 30px;
     text-align: center;
     width: 80%;
@@ -33,26 +33,46 @@
 
     #sbi_images {
       // padding-bottom: 0px !important;
-  
+      float: none;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      overflow-x: auto;
       .sbi_item {
-       .sbi_photo {
-        position: relative;
-         &:before {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
+        flex: 1 1 20%;
+        min-width: 20%;
+        max-width: 25%;
+        margin: 0 10px !important;
+        .sbi_photo_wrap {
           height: 100%;
-          background-color: $color__brand-primary;
-          background-image: linear-gradient(145deg, $color__brand-primary 40%, $color__brand-secondary 100%);
-          opacity: 0;
-          transition: opacity 0.2s ease-in-out;
-         }  
-        &:hover:before {
-          opacity: 0.4;
         }
-       }
+        .sbi_photo {
+          height: 100% !important;
+          position: relative;
+          &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $color__brand-primary;
+            background-image: linear-gradient(145deg, $color__brand-primary 40%, $color__brand-secondary 100%);
+            opacity: 0;
+            transition: opacity 0.2s ease-in-out;
+          }  
+          &:hover:before {
+            opacity: 0.4;
+          }
+          img {
+            display: block !important;
+            height: 100%;
+            object-fit: cover;
+          }
+          .sbi_lightbox_carousel_icon {
+            display: none !important;
+          }
+        }
        
       }
     }
