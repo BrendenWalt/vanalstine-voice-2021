@@ -213,3 +213,78 @@ include_once(get_template_directory().'/inc/acf-groups.php');
  * Load CMB2
  */
 require_once(dirname(__FILE__) . '/inc/cmb2-functions.php');
+
+// CPT functions
+function cptui_register_my_cpts_testimonials() {
+
+	/**
+	 * Post Type: Testimonials.
+	 */
+
+	$labels = [
+		"name" => __( "Testimonials", "vanalstine-voice" ),
+		"singular_name" => __( "Testimonial", "vanalstine-voice" ),
+		"menu_name" => __( "Testimonials", "vanalstine-voice" ),
+		"all_items" => __( "All Testimonials", "vanalstine-voice" ),
+		"add_new" => __( "Add new", "vanalstine-voice" ),
+		"add_new_item" => __( "Add new Testimonial", "vanalstine-voice" ),
+		"edit_item" => __( "Edit Testimonial", "vanalstine-voice" ),
+		"new_item" => __( "New Testimonial", "vanalstine-voice" ),
+		"view_item" => __( "View Testimonial", "vanalstine-voice" ),
+		"view_items" => __( "View Testimonials", "vanalstine-voice" ),
+		"search_items" => __( "Search Testimonials", "vanalstine-voice" ),
+		"not_found" => __( "No Testimonials found", "vanalstine-voice" ),
+		"not_found_in_trash" => __( "No Testimonials found in trash", "vanalstine-voice" ),
+		"parent" => __( "Parent Testimonial:", "vanalstine-voice" ),
+		"featured_image" => __( "Featured image for this Testimonial", "vanalstine-voice" ),
+		"set_featured_image" => __( "Set featured image for this Testimonial", "vanalstine-voice" ),
+		"remove_featured_image" => __( "Remove featured image for this Testimonial", "vanalstine-voice" ),
+		"use_featured_image" => __( "Use as featured image for this Testimonial", "vanalstine-voice" ),
+		"archives" => __( "Testimonial archives", "vanalstine-voice" ),
+		"insert_into_item" => __( "Insert into Testimonial", "vanalstine-voice" ),
+		"uploaded_to_this_item" => __( "Upload to this Testimonial", "vanalstine-voice" ),
+		"filter_items_list" => __( "Filter Testimonials list", "vanalstine-voice" ),
+		"items_list_navigation" => __( "Testimonials list navigation", "vanalstine-voice" ),
+		"items_list" => __( "Testimonials list", "vanalstine-voice" ),
+		"attributes" => __( "Testimonials attributes", "vanalstine-voice" ),
+		"name_admin_bar" => __( "Testimonial", "vanalstine-voice" ),
+		"item_published" => __( "Testimonial published", "vanalstine-voice" ),
+		"item_published_privately" => __( "Testimonial published privately.", "vanalstine-voice" ),
+		"item_reverted_to_draft" => __( "Testimonial reverted to draft.", "vanalstine-voice" ),
+		"item_scheduled" => __( "Testimonial scheduled", "vanalstine-voice" ),
+		"item_updated" => __( "Testimonial updated.", "vanalstine-voice" ),
+		"parent_item_colon" => __( "Parent Testimonial:", "vanalstine-voice" ),
+	];
+
+	$args = [
+		"label" => __( "Testimonials", "vanalstine-voice" ),
+		"labels" => $labels,
+		"description" => "",
+		"public" => true,
+		"publicly_queryable" => true,
+		"show_ui" => true,
+		"show_in_rest" => true,
+		"rest_base" => "",
+		"rest_controller_class" => "WP_REST_Posts_Controller",
+		"rest_namespace" => "wp/v2",
+		"has_archive" => false,
+		"show_in_menu" => true,
+		"show_in_nav_menus" => true,
+		"delete_with_user" => false,
+		"exclude_from_search" => false,
+		"capability_type" => "post",
+		"map_meta_cap" => true,
+		"hierarchical" => false,
+		"can_export" => false,
+		"rewrite" => [ "slug" => "testimonials", "with_front" => true ],
+		"query_var" => true,
+		"menu_icon" => "dashicons-format-quote",
+		"supports" => [ "title" ],
+		"show_in_graphql" => false,
+	];
+
+	register_post_type( "testimonials", $args );
+}
+
+add_action( 'init', 'cptui_register_my_cpts_testimonials' );
+
