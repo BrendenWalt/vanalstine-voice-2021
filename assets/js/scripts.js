@@ -1,4 +1,4 @@
-(function() {
+window.onload = function() {
   console.log('js is running');
 
   // let slideIndex = 0;
@@ -22,7 +22,7 @@
   //   console.log("right click");
   // }
 
-  var swiper = new Swiper('.swiper-container',  {
+  let swiper = new Swiper('.swiper-container',  {
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
@@ -54,5 +54,22 @@
     // keyboard: true,
    
   });
-  console.log(swiper);
-})();
+  console.log('swiper', swiper);
+
+  let heroContainer = document.getElementsByClassName( 'home-hero-container' )[ 0 ];
+  let logo = document.querySelector('header .site-branding');
+
+  let ioOptions =  {
+    rootMargin: '0px',
+    threshold: 0
+  }
+
+  let observer = new IntersectionObserver(navScrollDisplay, ioOptions);
+
+  observer.observe(heroContainer)
+  console.log('hero', heroContainer);
+
+  function navScrollDisplay(){
+    logo.classList.toggle('top');
+  }
+};
