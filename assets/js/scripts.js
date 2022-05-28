@@ -56,7 +56,7 @@ window.onload = function() {
   });
   console.log('swiper', swiper);
 
-  let heroContainer = document.getElementsByClassName( 'home-hero-container' )[ 0 ];
+  let heroContainer = document.querySelector( '.home-site-title' );
   let logo = document.querySelector('header .site-branding');
 
   let ioOptions =  {
@@ -70,6 +70,7 @@ window.onload = function() {
   console.log('hero', heroContainer);
 
   function navScrollDisplay(){
+    console.log('observer activated')
     logo.classList.toggle('top');
   }
 };
