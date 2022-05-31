@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-center;
     @include stack-mobile($screen-xs-max);
   }
   .home-about-img {
@@ -16,34 +16,29 @@
     }
   }
   .home-about-text-container {
+    background-color: $color__white;
+    display: flex;
+    flex-direction: column;
     flex: 1;
     position: relative;
     margin-left: -100px;
+    max-width: 650px;
     .about-box {
       position: relative;
-      background-color: $color__brand-primary;
-      padding: 35px 35px 35px 70px;
+      background-color: $color__white;
     }
     h2 {
-      // text-shadow: -2px -2px $color__text-white;
-      background-color: $color__white;
       color: $color__brand-primary;
       margin: 0;
       line-height: 1em;
-      position: absolute;
-      left: 0px;
-      top: 0;
-      transform: translateY(-60%);
-      padding: 5px 20px;
+      padding: 0px 0px 20px;
+      position: relative;
     }
     p {
-      margin: 0;
+      margin: 0 0 25px;
     }
-    .cta-primary {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      transform: translateY(100%);
+    .about-cta-container {
+      margin: 0 0 0 auto;
     }
   }
 
