@@ -83,17 +83,20 @@
     bottom: 2vh;
     margin-bottom: 20px;
     text-align: center;
+    animation-duration: 2s;
+      animation-delay: 1.5s;
+      animation-iteration-count: infinite;
+      animation-name: bounce-2;
+      animation-timing-function: none;
     p {
+      color: $color__text-primary;
+      font-style: italic;
       margin-bottom: 2px;
     }
     img {
       width: 20px;
       opacity: 0.5;
-      animation-duration: 2s;
-      animation-delay: 1.5s;
-      animation-iteration-count: infinite;
-      animation-name: bounce-2;
-      animation-timing-function: none;
+      
     }
   }
   .home-hero-text-content {
