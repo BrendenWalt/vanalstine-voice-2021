@@ -34,15 +34,13 @@
     #sbi_images {
       // padding-bottom: 0px !important;
       float: none;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      overflow-x: auto;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
+      // flex-direction: row;
+      // flex-wrap: wrap;
+      // overflow-x: auto;
       .sbi_item {
-        flex: 1 1 20%;
-        min-width: 20%;
-        max-width: 25%;
-        margin: 0 10px !important;
         .sbi_photo_wrap {
           height: 100%;
         }
@@ -71,6 +69,11 @@
           }
           .sbi_lightbox_carousel_icon {
             display: none !important;
+          }
+          &:hover {
+            .sbi-screenreader {
+              display: block;
+            }
           }
         }
        
