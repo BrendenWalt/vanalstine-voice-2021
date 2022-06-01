@@ -11,6 +11,8 @@
 	-webkit-transition: opacity 0.5s ease-in-out;
 	-moz-transition: opacity 0.5s ease-in-out;
 	transition: opacity 0.5s ease-in-out;
+	// visibility: hidden;
+	z-index: 300;
 	&:hover {
 		opacity: 1;
 	}

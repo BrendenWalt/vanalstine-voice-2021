@@ -2,7 +2,7 @@
 
 ?>
 
-<section class="home-video">
+<section class="home-video" uk-scrollspy="target: .scroll-to-top; cls: uk-animation-fade; delay: 300">
   <div class="home-video-container content-container">
     <div class="video">
       <!-- iframe -->
