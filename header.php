@@ -34,7 +34,7 @@
 
 	<header class="vv-site-header">
 		<div class="content">
-			<div class="site-branding top">
+			<div class="site-branding">
 				<?php if(!has_custom_logo()) { ?>
 					<div class="logo-backup"><?php echo(get_bloginfo('name')); ?></div>
 				<?php } else { 
@@ -90,7 +90,7 @@
 		
 	</header><!-- #masthead -->
 
-	<div class="uk-position-bottom-right uk-position-fixed scroll-to-top" style="z-index: 300">
+	<div class="uk-position-bottom-right uk-position-fixed scroll-to-top">
 		<a href=".vv-site-header" uk-scroll>
 			<span class="uk-text-center" uk-icon="icon: chevron-up; ratio: 1.75"></span>
 		</a>

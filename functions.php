@@ -157,6 +157,7 @@ add_action( 'widgets_init', 'vanalstine_voice_widgets_init' );
  * Enqueue scripts and styles.
  */
 function vanalstine_voice_scripts() {
+	
 	// UI Kit
 	wp_enqueue_style( 'uikit', get_template_directory_uri() . '/assets/uikit/css/uikit.min.css' );
 	wp_enqueue_script( 'uikit', get_template_directory_uri() . '/assets/uikit/js/uikit.min.js', array( 'jquery' ), '3.0.0.30', true );
@@ -287,4 +288,78 @@ function cptui_register_my_cpts_testimonials() {
 }
 
 add_action( 'init', 'cptui_register_my_cpts_testimonials' );
+
+function cptui_register_faq_cpts() {
+
+	/**
+	 * Post Type: FAQs.
+	 */
+
+	$labels = [
+		"name" => __( "FAQs", "vanalstine-voice" ),
+		"singular_name" => __( "FAQ", "vanalstine-voice" ),
+		"menu_name" => __( "My FAQs", "vanalstine-voice" ),
+		"all_items" => __( "All FAQs", "vanalstine-voice" ),
+		"add_new" => __( "Add new", "vanalstine-voice" ),
+		"add_new_item" => __( "Add new FAQ", "vanalstine-voice" ),
+		"edit_item" => __( "Edit FAQ", "vanalstine-voice" ),
+		"new_item" => __( "New FAQ", "vanalstine-voice" ),
+		"view_item" => __( "View FAQ", "vanalstine-voice" ),
+		"view_items" => __( "View FAQs", "vanalstine-voice" ),
+		"search_items" => __( "Search FAQs", "vanalstine-voice" ),
+		"not_found" => __( "No FAQs found", "vanalstine-voice" ),
+		"not_found_in_trash" => __( "No FAQs found in trash", "vanalstine-voice" ),
+		"parent" => __( "Parent FAQ:", "vanalstine-voice" ),
+		"featured_image" => __( "Featured image for this FAQ", "vanalstine-voice" ),
+		"set_featured_image" => __( "Set featured image for this FAQ", "vanalstine-voice" ),
+		"remove_featured_image" => __( "Remove featured image for this FAQ", "vanalstine-voice" ),
+		"use_featured_image" => __( "Use as featured image for this FAQ", "vanalstine-voice" ),
+		"archives" => __( "FAQ archives", "vanalstine-voice" ),
+		"insert_into_item" => __( "Insert into FAQ", "vanalstine-voice" ),
+		"uploaded_to_this_item" => __( "Upload to this FAQ", "vanalstine-voice" ),
+		"filter_items_list" => __( "Filter FAQs list", "vanalstine-voice" ),
+		"items_list_navigation" => __( "FAQs list navigation", "vanalstine-voice" ),
+		"items_list" => __( "FAQs list", "vanalstine-voice" ),
+		"attributes" => __( "FAQs attributes", "vanalstine-voice" ),
+		"name_admin_bar" => __( "FAQ", "vanalstine-voice" ),
+		"item_published" => __( "FAQ published", "vanalstine-voice" ),
+		"item_published_privately" => __( "FAQ published privately.", "vanalstine-voice" ),
+		"item_reverted_to_draft" => __( "FAQ reverted to draft.", "vanalstine-voice" ),
+		"item_scheduled" => __( "FAQ scheduled", "vanalstine-voice" ),
+		"item_updated" => __( "FAQ updated.", "vanalstine-voice" ),
+		"parent_item_colon" => __( "Parent FAQ:", "vanalstine-voice" ),
+	];
+
+	$args = [
+		"label" => __( "FAQs", "vanalstine-voice" ),
+		"labels" => $labels,
+		"description" => "Frequently Asked Questions",
+		"public" => true,
+		"publicly_queryable" => true,
+		"show_ui" => true,
+		"show_in_rest" => true,
+		"rest_base" => "",
+		"rest_controller_class" => "WP_REST_Posts_Controller",
+		"rest_namespace" => "wp/v2",
+		"has_archive" => false,
+		"show_in_menu" => true,
+		"show_in_nav_menus" => true,
+		"delete_with_user" => false,
+		"exclude_from_search" => false,
+		"capability_type" => "post",
+		"map_meta_cap" => true,
+		"hierarchical" => false,
+		"can_export" => false,
+		"rewrite" => [ "slug" => "faq", "with_front" => true ],
+		"query_var" => true,
+		"menu_icon" => "dashicons-editor-help",
+		"supports" => [ "title", "editor", "thumbnail" ],
+		"show_in_graphql" => false,
+	];
+
+	register_post_type( "faq", $args );
+}
+
+add_action( 'init', 'cptui_register_faq_cpts' );
+
 
