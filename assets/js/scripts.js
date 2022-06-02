@@ -57,47 +57,26 @@ window.onload = function() {
 
 	// Intersection observer
 
-	const target = document.querySelector('.home-video');
-	const topTarget = document.querySelector('.home-hero');
-	const scrollTopBtn = document.querySelector('.scroll-to-top');
+	const target = document.querySelector( '.home-hero' );
+	const scrollTopBtn = document.querySelector( '.scroll-to-top' );
 
 	let options = {
 		rootMargin: '0px',
-		threshold: 1.0
+		threshold: [ 0, 0.5, 1 ]
 	};
 
-	let displayObserver = new IntersectionObserver(displayScrollToTop, options);
-	displayObserver.observe(target);
-
-	let hideObserver = new IntersectionObserver(hideScrollToTop, {threshold: 1});
-	hideObserver.observe(topTarget);
-
-	function hideScrollToTop() {
-		console.log('hiding the scroll button');
-		scrollTopBtn.classList.remove('show-scroll-btn');
+	let callback = function( entries) {
+		entries.forEach( function( entry ) {
+			if( entry.intersectionRatio > 0.5 ) {
+				scrollTopBtn.classList.remove( 'show-scroll-btn' );
+			} else {
+				scrollTopBtn.classList.add( 'show-scroll-btn' );
+			}
+		});
 	}
 
-	function displayScrollToTop() {
-		console.log('observer activated');
-		scrollTopBtn.classList.add('show-scroll-btn');
-	}
-
-	// window.onscroll = function() {
-	// 	scrollFunction()
-	// }
-
-	// function scrollFunction() {
-	// 	const targetElement = document.querySelector('.home-video');
-	// 	const scrollButton = document.querySelector( '.scroll-to-top' );
-	// 	console.log('running scroll');
-	// 	if (targetElement.scrollTop > 100) {
-	// 		scrollButton.classList.remove( 'hide-scroll' );
-	// 		console.log('show scroll');
-	// 	} else {
-	// 		console.log('hide scroll');
-	// 		scrollButton.classList.add( 'hide-scroll' );
-	// 	}
-	// }
+	const observer = new IntersectionObserver(callback, options);
+	observer.observe(target);
 
 
 };
