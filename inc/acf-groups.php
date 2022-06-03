@@ -13,14 +13,15 @@
     include 'acf_groups/home_programs_block.php';
     // Home Video Block
     include 'acf_groups/home_video.php';
-    // Home Testimonials
-    include 'acf_groups/home_testimonials.php';
-
     // Contact form
     include 'acf_groups/contact_form.php';
     // Social Media
     include 'acf_groups/home_ig_feed.php';
     include 'acf_groups/social_media_menu.php';
+
+    // Custom Posts
+    include 'acf_groups/home_testimonials.php';
+    include 'acf_groups/post_program.php';
   endif;
 
 ?>

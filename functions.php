@@ -215,6 +215,14 @@ include_once(get_template_directory().'/inc/acf-groups.php');
  */
 require_once(dirname(__FILE__) . '/inc/cmb2-functions.php');
 
+/*-------------------------------------
+  Move Yoast to the Bottom
+---------------------------------------*/
+function yoasttobottom() {
+  return 'low';
+}
+add_filter( 'wpseo_metabox_prio', 'yoasttobottom');
+
 // CPT functions
 function cptui_register_my_cpts_testimonials() {
 
@@ -361,5 +369,80 @@ function cptui_register_faq_cpts() {
 }
 
 add_action( 'init', 'cptui_register_faq_cpts' );
+
+
+function cptui_register_my_cpts_programs() {
+
+	/**
+	 * Post Type: Programs.
+	 */
+
+	$labels = [
+		"name" => __( "Programs", "vanalstine-voice" ),
+		"singular_name" => __( "Program", "vanalstine-voice" ),
+		"menu_name" => __( "Programs", "vanalstine-voice" ),
+		"all_items" => __( "All programs", "vanalstine-voice" ),
+		"add_new" => __( "Add new", "vanalstine-voice" ),
+		"add_new_item" => __( "Add new programs", "vanalstine-voice" ),
+		"edit_item" => __( "Edit programs", "vanalstine-voice" ),
+		"new_item" => __( "New programs", "vanalstine-voice" ),
+		"view_item" => __( "View programs", "vanalstine-voice" ),
+		"view_items" => __( "View programs", "vanalstine-voice" ),
+		"search_items" => __( "Search programs", "vanalstine-voice" ),
+		"not_found" => __( "No programs found", "vanalstine-voice" ),
+		"not_found_in_trash" => __( "No programs found in trash", "vanalstine-voice" ),
+		"parent" => __( "Parent programs:", "vanalstine-voice" ),
+		"featured_image" => __( "Featured image for this programs", "vanalstine-voice" ),
+		"set_featured_image" => __( "Set featured image for this programs", "vanalstine-voice" ),
+		"remove_featured_image" => __( "Remove featured image for this programs", "vanalstine-voice" ),
+		"use_featured_image" => __( "Use as featured image for this programs", "vanalstine-voice" ),
+		"archives" => __( "programs archives", "vanalstine-voice" ),
+		"insert_into_item" => __( "Insert into programs", "vanalstine-voice" ),
+		"uploaded_to_this_item" => __( "Upload to this programs", "vanalstine-voice" ),
+		"filter_items_list" => __( "Filter programs list", "vanalstine-voice" ),
+		"items_list_navigation" => __( "programs list navigation", "vanalstine-voice" ),
+		"items_list" => __( "programs list", "vanalstine-voice" ),
+		"attributes" => __( "programs attributes", "vanalstine-voice" ),
+		"name_admin_bar" => __( "programs", "vanalstine-voice" ),
+		"item_published" => __( "programs published", "vanalstine-voice" ),
+		"item_published_privately" => __( "programs published privately.", "vanalstine-voice" ),
+		"item_reverted_to_draft" => __( "programs reverted to draft.", "vanalstine-voice" ),
+		"item_scheduled" => __( "programs scheduled", "vanalstine-voice" ),
+		"item_updated" => __( "programs updated.", "vanalstine-voice" ),
+		"parent_item_colon" => __( "Parent programs:", "vanalstine-voice" ),
+	];
+
+	$args = [
+		"label" => __( "Programs", "vanalstine-voice" ),
+		"labels" => $labels,
+		"description" => "The different programs that are currently being offered. Used to populate the 'programs' section of the home page.",
+		"public" => true,
+		"publicly_queryable" => true,
+		"show_ui" => true,
+		"show_in_rest" => true,
+		"rest_base" => "",
+		"rest_controller_class" => "WP_REST_Posts_Controller",
+		"rest_namespace" => "wp/v2",
+		"has_archive" => false,
+		"show_in_menu" => true,
+		"show_in_nav_menus" => true,
+		"delete_with_user" => false,
+		"exclude_from_search" => false,
+		"capability_type" => "post",
+		"map_meta_cap" => true,
+		"hierarchical" => false,
+		"can_export" => false,
+		"rewrite" => [ "slug" => "programs", "with_front" => true ],
+		"query_var" => true,
+		"menu_icon" => "dashicons-portfolio",
+		"supports" => [ "title", "editor", "thumbnail" ],
+		"show_in_graphql" => false,
+	];
+
+	register_post_type( "programs", $args );
+}
+
+add_action( 'init', 'cptui_register_my_cpts_programs' );
+
 
 
