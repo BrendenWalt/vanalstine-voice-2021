@@ -14,8 +14,8 @@
   <section class="home-testimonials">
     <div class="carousel-container">
       <div class="content-container swiper-container">
+        
         <div class="testimonials-container swiper-wrapper">
-
     <?php
       while ( $loop->have_posts() ) : $loop->the_post();
     ?>
@@ -25,7 +25,9 @@
               <h4><?php echo the_field('testimonial_text') ?></h4>
               <footer>
                 <strong><?php echo the_field('testimonial_name') ?></strong><br>
-                <i><?php echo the_field('testimonial_subtitle') ?></i>
+                <?php if (!empty(the_field('testimonial_subtitle'))) : ?>
+                  <i><?php echo the_field('testimonial_subtitle') ?></i>
+                <?php endif; ?>
               </footer>
             </div>
           </blockquote>
@@ -34,20 +36,20 @@
       endwhile;
       wp_reset_postdata();
     ?>
-
-        <div class="testimonial-counter-container swiper-pagination">
-          <!-- <span class="testimonial-counter active"></span>
-          <span class="testimonial-counter"></span> -->
-        </div>
-        <div class="testimonial-nav arrow-right swiper-button-next">
-          <!-- <i class="fas fa-chevron-right"></i> -->
-        </div>
-        <div class="testimonial-nav arrow-left swiper-button-prev">
-          <!-- <i class="fas fa-chevron-left"></i> -->
         </div>
 
+      <div class="testimonial-counter-container swiper-pagination">
+        <!-- <span class="testimonial-counter active"></span>
+        <span class="testimonial-counter"></span> -->
       </div>
-    </div>
+      <div class="testimonial-nav arrow-right swiper-button-next">
+        <!-- <i class="fas fa-chevron-right"></i> -->
+      </div>
+      <div class="testimonial-nav arrow-left swiper-button-prev">
+        <!-- <i class="fas fa-chevron-left"></i> -->
+      </div>
+
+   </div>
 
 </section>
 

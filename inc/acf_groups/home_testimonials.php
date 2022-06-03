@@ -10,7 +10,7 @@ acf_add_local_field_group(array(
       'name' => 'testimonial_text',
       'type' => 'textarea',
       'instructions' => 'What was said?',
-      'required' => 0,
+      'required' => 1,
       'conditional_logic' => 0,
       'wrapper' => array(
         'width' => '',
@@ -29,7 +29,7 @@ acf_add_local_field_group(array(
       'name' => 'testimonial_name',
       'type' => 'text',
       'instructions' => 'Who said the thing?',
-      'required' => 0,
+      'required' => 1,
       'conditional_logic' => 0,
       'wrapper' => array(
         'width' => '',
