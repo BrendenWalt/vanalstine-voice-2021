@@ -9,6 +9,7 @@
   margin: 45px 0px;
   min-height: 450px;
   position: relative;
+  z-index: 5;
   &.no-image {
     background-color: $color__brand-secondary;
   }
