@@ -16,7 +16,7 @@
         'class' => '',
         'id' => '',
       ),
-      'default_value' => 'Programs',
+      'default_value' => 'Available Programs',
       'placeholder' => '',
       'prepend' => '',
       'append' => '',
@@ -29,6 +29,7 @@
 			'type' => 'post_object',
 			'instructions' => '',
 			'required' => 1,
+      'conditional_logic' => 0,
 			'wrapper' => array(
 				'width' => '',
 				'class' => '',
