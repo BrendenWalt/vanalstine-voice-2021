@@ -40,7 +40,7 @@
 			),
 			'taxonomy' => '',
 			'allow_null' => 0,
-			'multiple' => 0,
+			'multiple' => 1,
 			'return_format' => 'object',
 			'ui' => 1,
 		),
