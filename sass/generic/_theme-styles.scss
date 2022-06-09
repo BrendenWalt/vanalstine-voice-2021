@@ -54,7 +54,7 @@ a:hover {
   }
 }
 
-.cta-secondary {
+.cta-primary-outline {
   padding: 10px 40px;
   color: $color__text-white;
   border: 3px solid $color__brand-primary;
@@ -68,5 +68,32 @@ a:hover {
   }
   &:hover {
     background-color: $color__brand-primary;
+  }
+}
+
+.cta-secondary {
+  background-color: $color__brand-secondary;
+  padding: 10px 40px;
+  color: $color__text-white;
+  display: inline-block;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  &:hover {
+    text-decoration: none;
+    color: $color__text-white;
+    background-color: lighten($color__brand-secondary, 8%);
+  }
+  &.color-secondary {
+    background-color: $color__brand-secondary;
+    &:hover {
+      background-color: lighten($color__brand-secondary, 8%)
+    }
+  }
+  &:visited {
+    color: $color__text-white;
   }
 }
