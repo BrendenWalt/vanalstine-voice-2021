@@ -4,6 +4,26 @@
     'title' => 'Video',
     'fields' => array(
       array(
+        'key' => 'field_600b5a06fbba3_home_video',
+        'label' => 'Intro Text',
+        'name' => 'video_text',
+        'type' => 'textarea',
+        'instructions' => '',
+        'required' => 0,
+        'conditional_logic' => 0,
+        'wrapper' => array(
+          'width' => '',
+          'class' => '',
+          'id' => '',
+        ),
+        'default_value' => '',
+        'placeholder' => '',
+        'maxlength' => '',
+        'rows' => '',
+        // 'new_lines' => 'wpautop',
+        'new_lines' => 'br',
+      ),
+      array(
         'key' => 'field_600c453a7a85d',
         'label' => 'Video',
         'name' => 'home_video',
