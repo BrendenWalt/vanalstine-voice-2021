@@ -11,8 +11,10 @@
     <div uk-scrollspy="target: > div; cls:uk-animation-fade uk-animation-slide-bottom-medium; delay: 200" class="home-benefits-cards-container uk-grid-large uk-grid-match uk-child-width-1-4@m uk-child-width-1-2@s" uk-grid>
       <!-- Card 1 -->
       <div class="home-benefit-card">
-        <div class="home-benefit-icon">
-          <img src="" alt="">
+      <div class="home-benefit-icon">
+          <div>
+           <i class="fas fa-music"></i>
+          </div>
         </div>
         <div class="home-benefit-card-text">
           <h3>Lorem ipsum dolor sit</h3>
@@ -22,7 +24,9 @@
       <!-- Card 1 -->
       <div  class="home-benefit-card">
         <div class="home-benefit-icon">
-        <i class="fas fa-music"></i>
+          <div>
+           <i class="fas fa-music"></i>
+          </div>
         </div>
         <div class="home-benefit-card-text">
           <h3>Lorem ipsum dolor sit</h3>
@@ -31,8 +35,10 @@
       </div>
       <!-- Card 1 -->
       <div  class="home-benefit-card">
-        <div class="home-benefit-icon">
-          <img src="" alt="">
+      <div class="home-benefit-icon">
+          <div>
+           <i class="fas fa-music"></i>
+          </div>
         </div>
         <div class="home-benefit-card-text">
           <h3>Lorem ipsum dolor sit</h3>
@@ -40,9 +46,11 @@
         </div>
       </div>
        <!-- Card 1 -->
-       <div  class="home-benefit-card">
+      <div  class="home-benefit-card">
         <div class="home-benefit-icon">
-          <img src="" alt="">
+          <div>
+           <i class="fas fa-music"></i>
+          </div>
         </div>
         <div class="home-benefit-card-text">
           <h3>Lorem ipsum dolor sit</h3>
@@ -52,8 +60,8 @@
     </div>
     
     <div class="home-benefits-ctas">
-      <a href="" class="cta-primary">Lorem, ipsum</a>
-      <a href="" class="cta-primary">Lorem, ipsum</a>
+      <a href="" class="cta-secondary">Lorem, ipsum</a>
+      <a href="" class="cta-secondary-outline">Lorem, ipsum</a>
     </div>
   </div>
  

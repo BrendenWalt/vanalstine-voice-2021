@@ -1,7 +1,6 @@
 .home-benefits {
-  $icon-width: 100px;
-  $icon-height: 100px;
-  $icon-size: 80px;
+  $icon-card-size: 110px;
+  $icon-size: 60px;
 
   text-align: center;
   h2 {
@@ -9,6 +8,9 @@
     margin-bottom: 4rem;
     position: relative;
     @include fancy-divider;
+  }
+  h3 {
+    color: $color__text-primary;
   }
   .home-benefits-container {
     width: 100%;
@@ -29,16 +31,26 @@
   }
   .home-benefit-card-text {
     background-color: $color__background-light;
+    color: $color__text-primary;
     padding: 0px;
     text-align: center;
   }
   .home-benefit-icon {
-    height: $icon-height;
-    color: $color__brand-primary;
-    margin: 0 auto 20px auto;
+    margin: 0 auto 10px auto;
     text-align: center;
     i {
+      color: $color__brand-primary;
       font-size: $icon-size;
+    }
+    div {
+      width:$icon-card-size;
+      height: $icon-card-size;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $color__background-light;
+      border-radius: 50%;
+      box-shadow: 0 5px 15px rgba(102, 102, 102, 0.1);
     }
   }
   .home-benefits-ctas {
