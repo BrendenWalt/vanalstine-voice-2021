@@ -97,3 +97,22 @@ a:hover {
     color: $color__text-white;
   }
 }
+
+.cta-secondary-outline {
+  padding: 10px 40px;
+  color: $color__brand-secondary;
+  border: 3px solid $color__brand-secondary;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 0px 5px;
+  transition: all 0.2s ease-in-out;
+  &:visited {
+    color: $color__brand-secondary;
+  }
+  &:hover {
+    color: $color__text-white;
+    border-color: lighten($color__brand-secondary, 8%);
+    background-color: lighten($color__brand-secondary, 8%);
+  }
+}

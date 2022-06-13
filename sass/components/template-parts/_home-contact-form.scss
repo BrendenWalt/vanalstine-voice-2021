@@ -1,5 +1,10 @@
 .home-contact-form-section {
   position:  relative;
+  h2 {
+    color: $color__text-primary;
+    font-size: 3rem;
+    text-align: left;
+  }
   .content-container {
     display: flex;
     flex-direction: row-reverse;
@@ -13,12 +18,26 @@
     }
     .home-contact-form {
       flex: 50%;
-      padding: 50px;
+      padding: 15px 50px;
       display: flex;
       align-items: center;
       justify-content: center;
+      flex-direction: column;
+     .contact-title-container {
+        display: block;
+        width: 80%;
+      }
       .wpcf7 {
         width: 80%;
+        .wpcf7-form label {
+          font-size: 18px;
+        }
+        input {
+          color: $color__text-primary;
+          &[type=submit] {
+            color: #fff;
+          }
+        }
       }
     }
   }
