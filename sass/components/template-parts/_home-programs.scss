@@ -1,6 +1,6 @@
 .home-programs {
   background-color: white;
-  padding: 45px 5% 75px;
+  padding: 0px 5%;
   margin-top: 0px;
   text-align: center;
   h2 {
@@ -12,7 +12,7 @@
     @include fancy-divider;
   }
   h3 {
-    font-size: 3rem;
+    font-size: 42px;
     margin-bottom: 0.25rem;
     color: $color__text-primary;
   }
@@ -39,6 +39,14 @@
     position: relative;
     margin: 5px;
   }
+  .program-description {
+    color: $color__text-primary;
+    margin-top: 20px;
+    em {color: $color__text-primary;}
+    li {
+      text-align: left;
+    }
+  }
   .program-image {
     align-self: flex-end;
     position: relative;
@@ -55,12 +63,21 @@
   }
   .program-info {
     flex: 1;
-    margin-bottom: 20px;
-    margin-top: 35px;
+    margin-bottom: 30px;
+    margin-top: 0px;
   }
   .program-text {
-    padding-bottom: 25px;
+    padding-bottom: 5px;
     z-index: 2;
     text-align: center;
+  }
+  .program-title {
+    background-color: $color__brand-primary;
+    color: #fff;
+    padding: 8px;
+    div {
+      border: 2px solid #fff;
+      padding: 15px 4px;
+    }
   }
 }

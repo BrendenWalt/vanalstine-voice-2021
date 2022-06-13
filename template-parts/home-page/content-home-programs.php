@@ -31,10 +31,10 @@
     <div class="home-program-card uk-card uk-body uk-card-default">
       <div class="program-info">
         <div class="program-text">
-          <h3 class="program-title"><?php echo( $program_title ); ?></h3>
-          <p class="program-description">
+          <h3 class="program-title"><div><?php echo( $program_title ); ?></div></h3>
+          <div class="program-description">
             <?php echo( $program_description ); ?>
-          </p>
+          </div>
         </div>
         <a class="cta-secondary"><?php echo( $button_text ); ?></a>
       </div>
