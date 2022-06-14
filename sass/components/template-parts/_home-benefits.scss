@@ -16,12 +16,14 @@
     width: 100%;
     max-width: $content_max-width;
     margin: 0 auto;
+    padding: 0px 5%;
   }
   .home-benefits-cards-container {
     margin-bottom: 4rem;
     @include stack-mobile($screen-xs-max);
   }
   .home-benefit-card {
+   display: block;
     &:first-child {
       margin-left: 0px;
     }
