@@ -1,10 +1,16 @@
 <?php
   $header = get_field('section_title');
+
+  $button_01_text = get_field('button_01_text');
+  $button_01_url = get_field('button_01_url');
+
+  $button_02_text = get_field('button_02_text');
+  $button_02_url = get_field('button_02_url');
+
   $benefit_1 = get_field('benefit_1');
   $benefit_2 = get_field('benefit_2');
   $benefit_3 = get_field('benefit_3');
   $benefit_4 = get_field('benefit_4');
-  $benefit_5 = get_field('benefit_5');
 
 ?>
 
@@ -97,11 +103,23 @@
 
     </div>
     
-    <div class="home-benefits-ctas">
-      
-      <a href="" class="cta-secondary">Lorem, ipsum</a>
-      <a href="" class="cta-secondary-outline">Lorem, ipsum</a>
-    </div>
+    <?php if($button_01_url || $button_02_url) { ?>
+      <div class="home-benefits-ctas">
+        <?php if(!empty($button_01_url)) { ?>
+          <a href="<?php echo esc_url($button_01_url); ?>" class="cta-secondary">
+            <?php echo (!empty($button_01_text) ?  $button_01_text : acf_get_field('button_01_text')['default_value']); ?>
+          </a>
+        <?php } ?>
+
+        <?php if(!empty($button_02_url)) { ?>
+          <a href="<?php echo esc_url($button_02_url); ?>" class="cta-secondary-outline">
+            <?php echo (!empty($button_02_text) ?  $button_02_text : acf_get_field('button_02_text')['default_value']); ?>
+          </a>
+        <?php } ?>
+       
+      </div>
+
+      <?php } ?>
   </div>
  
 </section>

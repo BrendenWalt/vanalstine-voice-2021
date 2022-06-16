@@ -75,16 +75,20 @@ a:hover {
   background-color: $color__brand-secondary;
   padding: 10px 40px;
   color: $color__text-white;
+  border: 3px solid $color__brand-secondary;
   display: inline-block;
   font-weight: bold;
   letter-spacing: 0.1em;
   text-decoration: none;
   text-transform: uppercase;
+  margin: 0px 5px;
   transition: all 0.2s ease-in-out;
+  min-width: 225px;
   cursor: pointer;
   &:hover {
     text-decoration: none;
     color: $color__text-white;
+    border-color: lighten($color__brand-secondary, 8%);
     background-color: lighten($color__brand-secondary, 8%);
   }
   &.color-secondary {
@@ -93,7 +97,8 @@ a:hover {
       background-color: lighten($color__brand-secondary, 8%)
     }
   }
-  &:visited {
+  &:visited,
+  &:active {
     color: $color__text-white;
   }
 }
@@ -102,11 +107,13 @@ a:hover {
   padding: 10px 40px;
   color: $color__brand-secondary;
   border: 3px solid $color__brand-secondary;
+  display: inline-block;
   font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
   margin: 0px 5px;
   transition: all 0.2s ease-in-out;
+  min-width: 225px;
   &:visited {
     color: $color__brand-secondary;
   }
