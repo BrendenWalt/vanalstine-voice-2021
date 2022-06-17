@@ -3,6 +3,7 @@
   margin-bottom: 0px;
   .ig-title-card {
     border: 3px solid $color__brand-primary;
+    border-radius: 15px;
     margin: 0 auto 15px;
     padding: 30px;
     text-align: center;
@@ -43,12 +44,19 @@
       // flex-wrap: wrap;
       // overflow-x: auto;
       .sbi_item {
+        transition: transform 0.15s ease-in-out;
+        &:hover {
+          transform: scale(1.02);
+          z-index: 50;
+        }
         .sbi_photo_wrap {
           height: 100%;
         }
         .sbi_photo {
           height: 100% !important;
           position: relative;
+          opacity: 1 !important;
+         
           &:before {
             content: '';
             position: absolute;
@@ -58,11 +66,12 @@
             height: 100%;
             background-color: $color__brand-primary;
             background-image: linear-gradient(145deg, $color__brand-primary 40%, $color__brand-secondary 100%);
-            opacity: 0;
-            transition: opacity 0.2s ease-in-out;
+            opacity: 0.5;
+            transition: all 0.15s ease-in-out;
           }  
           &:hover:before {
-            opacity: 0.4;
+            opacity: 0;
+            // transform: scale(0.1);
           }
           img {
             display: block !important;
