@@ -12,7 +12,8 @@
     @include fancy-divider;
   }
   h3 {
-    font-size: 42px;
+    font-size: 50px;
+    font-variant: petite-caps;
     margin-bottom: 0.25rem;
     color: $color__text-primary;
   }
@@ -29,6 +30,7 @@
     @include stack-mobile($screen-xs-max);
   }
   .home-program-card {
+    border-radius: 15px;
     min-height: 65vh;
     width: 33%;
     max-width: 450px;
@@ -36,12 +38,18 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    overflow: hidden;
     position: relative;
     margin: 5px;
+    transition: all 150ms ease-in-out;
+    &:hover {
+      transform: scale(1.02);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.18);
+    }
   }
   .program-description {
     color: $color__text-primary;
-    margin-top: 20px;
+    margin-top: 15px;
     em {color: $color__text-primary;}
     li {
       text-align: left;
@@ -72,12 +80,13 @@
     text-align: center;
   }
   .program-title {
-    background-color: $color__brand-primary;
-    color: #fff;
-    padding: 8px;
+    
+    color: $color__text-primary;
+    padding: 20px 30% 10px 5%;
+    text-align: left;
     div {
-      border: 2px solid #fff;
-      padding: 15px 4px;
+      padding-bottom: 5px;
+      border-bottom: 2px solid $color__brand-primary;
     }
   }
 }
