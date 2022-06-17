@@ -75,6 +75,25 @@
 	}
 }
 
+@mixin mini-fancy-divider {
+	&:before {
+		content: '';
+		width: 100%;
+		border-bottom: 2px solid $color__brand-primary;
+		position: absolute;
+		bottom: 0px;
+		left: 15%;
+	}
+	&:after {
+		content: '';
+		width: 100%;
+		border-bottom: 2px solid $color__brand-primary;
+		position: absolute;
+		bottom: calc(0px - 8px);
+		right: calc(-28%);
+	}
+}
+
 @mixin standard-text-block {
 	color: $color__text-primary;
 	line-height: 1.6rem;
