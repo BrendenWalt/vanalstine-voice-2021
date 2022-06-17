@@ -2,14 +2,22 @@
   position:  relative;
   h2 {
     color: $color__text-primary;
+    display: inline-block;
     font-size: 3rem;
+    position: relative;
     text-align: left;
+    @include mini-fancy-divider;
   }
   .content-container {
     display: flex;
     flex-direction: row-reverse;
     position: relative;
+
     @include stack-mobile($screen-xs-max);
+    .contact-form-container {
+      border-radius: 15px;
+      width: 100%;
+    }
     .home-contact-image {
       flex: 50%;
       position: relative;
@@ -21,14 +29,15 @@
       padding: 15px 50px;
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: space-between;
       flex-direction: column;
      .contact-title-container {
+        align-self: flex-start;
         display: block;
         width: 80%;
       }
       .wpcf7 {
-        width: 80%;
+        width: 100%;
         .wpcf7-form label {
           font-size: 18px;
         }
@@ -39,6 +48,9 @@
           }
         }
       }
+    }
+    .uk-card-body {
+      padding: 20px 40px;
     }
   }
 }
