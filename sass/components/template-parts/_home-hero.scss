@@ -10,18 +10,16 @@
     h1 {
       color: $color__text-white;
       font-family: $font-headline;
-      font-size: 7em;
+      font-variant: petite-caps;
+      font-size: 9em;
       text-align: right;
       line-height:100%;
-      text-transform: uppercase;
       
     }
     span {
       background-color: $color__brand-primary;
       padding: 0px 40px;
-      vertical-align: middle;
       &:first-child {
-        line-height: 85%;
         margin-right: 100px;
       }
     }
