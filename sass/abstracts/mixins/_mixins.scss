@@ -41,19 +41,35 @@
 @mixin fancy-divider {
 	&:before {
 		content: '';
-		width: 115%;
+		width: 85%;
 		border-bottom: 2px solid $color__brand-primary;
 		position: absolute;
 		bottom: 0px;
-		right: -35%;
+		left: 50%;
+		transform: translateX(-50%);
 	}
 	&:after {
 		content: '';
-		width: 115%;
+		width:65%;
 		border-bottom: 2px solid $color__brand-primary;
 		position: absolute;
 		bottom: calc(0px - 8px);
-		right: calc(-35% - 20%);
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	@media screen and (min-width: $screen-md-min) {
+		&:before {
+			width: 115%;
+			right: -35%;
+			left: unset;
+			transform: initial;
+		}
+		&:after {
+			width: 115%;
+			right: calc(-35% - 20%);
+			left: unset;
+			transform: initial;
+		}
 	}
 }
 
