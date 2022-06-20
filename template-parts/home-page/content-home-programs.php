@@ -36,11 +36,15 @@
             <?php echo( $program_description ); ?>
           </div>
         </div>
-        <a class="cta-secondary"><?php echo( $button_text ); ?></a>
+        <a class="cta-secondary" href="<?php echo ( !empty($program_button_link) ? esc_url($program_button_link) : '#home-contact'); ?>"><?php echo( $button_text ); ?></a>
       </div>
      
       <div class="program-image uk-card-media-bottom">
-        <img src="https://images.unsplash.com/photo-1540593463874-59835505e99d" width="1800" height="1200" alt="">
+        <?php if($program_image) { ?>
+          <img src="<?php echo($program_image['url']) ?>" width="1800" height="1200" alt="">
+        <?php } else { ?>
+          <img src="https://images.unsplash.com/photo-1540593463874-59835505e99d" width="1800" height="1200" alt="">
+        <?php } ?>
       </div>
 
     </div>

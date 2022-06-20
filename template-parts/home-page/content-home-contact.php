@@ -2,7 +2,7 @@
 
 ?>
 
-<section class="home-contact-form-section">
+<section id="home-contact" class="home-contact-form-section">
 
   <div class="content-container">
     <div class="home-contact-form">
