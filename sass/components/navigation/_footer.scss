@@ -55,6 +55,9 @@
 	}
 	.footer-site-nav {
 		flex:1;
+		nav ul li {
+			vertical-align: top;
+		}
 	}
 	.footer-social-menu {
 		flex: 1;
