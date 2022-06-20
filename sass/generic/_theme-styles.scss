@@ -18,17 +18,44 @@ h4 {
 
 h2 {
   font-size: 3.5rem;
-  line-height: 1.75em;
+  line-height: 1em;
+}
+
+p {
+  font-family: $font-primary;
+  font-weight: 300;
 }
 
 a:hover {
   text-decoration: none;
 }
 
+// Typography media queries
+@media only screen and (min-width: $screen-md-min) {
+  h2 {
+    line-height: 1.75em;
+  }
+}
+
+section {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+section.section-no-pad-mobile {
+  padding-left: 0%;
+  padding-right: 0%;
+}
+@media only screen and (min-width: $screen-md-min) {
+  section {
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+}
+
 
 // BUTTON STYLES
 .cta-primary {
-  background-color: $color__brand-primary;
+  background-color: darken($color__brand-primary, 8%);
   padding: 10px 40px;
   color: $color__text-white;
   display: inline-block;
@@ -41,7 +68,7 @@ a:hover {
   &:hover {
     text-decoration: none;
     color: $color__text-white;
-    background-color: darken($color__brand-primary, 8%);
+    background-color: $color__brand-primary;
   }
   &.color-secondary {
     background-color: $color__brand-secondary;
