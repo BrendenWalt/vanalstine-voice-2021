@@ -1,6 +1,7 @@
 .home-ig-feed {
   margin-top: 65px;
   margin-bottom: 0px;
+  overflow-x: hidden;
   .ig-title-card {
     border: 3px solid $color__brand-primary;
     border-radius: 15px;
@@ -31,7 +32,7 @@
 
   #sb_instagram.sbi {
     padding-bottom: 0px !important;
-
+    // overflow-x: hidden;
     #sbi_images {
       float: none;
       display: grid;
@@ -39,6 +40,7 @@
       grid-template-rows: repeat(1,1fr);
       grid-auto-rows: 0;
       gap: 10px;
+      // overflow-x: hidden;
       .sbi_item {
         transition: transform 0.15s ease-in-out;
         &:hover {
@@ -62,8 +64,10 @@
             height: 100%;
             background-color: $color__brand-primary;
             background-image: linear-gradient(145deg, $color__brand-primary 40%, $color__brand-secondary 100%);
-            opacity: 0.5;
             transition: all 0.15s ease-in-out;
+            @media screen and (min-width: $screen-lg-min) {
+              opacity: 0.5;
+            }
           }  
           &:hover:before {
             opacity: 0;
