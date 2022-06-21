@@ -2,7 +2,7 @@
   $ig_feed_headline    = get_field('ig_headline');
 ?>  
 
-<section class="home-ig-feed">
+<section class="home-ig-feed section-no-pad-mobile">
   <div class="ig-feed-container">
     <div class="ig-title-card">
       <i class="fab fa-instagram"></i>

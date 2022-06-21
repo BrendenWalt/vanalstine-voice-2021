@@ -4,9 +4,11 @@
     color: $color__text-primary;
     display: inline-block;
     font-size: 3rem;
+    margin-bottom: 25px;
+    padding-bottom: 20px;
     position: relative;
-    text-align: left;
-    @include mini-fancy-divider;
+    text-align: center;
+    @include fancy-divider;
   }
   .content-container {
     display: flex;
@@ -25,8 +27,8 @@
       left: 0;
     }
     .home-contact-form {
-      flex: 50%;
-      padding: 15px 50px;
+      flex: 1;
+      padding: 15px 5%;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -34,7 +36,7 @@
      .contact-title-container {
         align-self: flex-start;
         display: block;
-        width: 80%;
+        width: 100%;
       }
       .wpcf7 {
         width: 100%;
@@ -48,9 +50,25 @@
           }
         }
       }
+      @media screen and (min-width: $screen-sm-min) {
+        flex: 50%;
+        padding-left: 50px;
+        padding-right: 50px;
+        .contact-title-container {
+          width: 80%;
+        }
+      }
     }
     .uk-card-body {
       padding: 20px 40px;
+    }
+  }
+  @media only screen and (min-width: $screen-md-min) {
+    h2 {
+      padding-bottom: 0px;
+      text-align: left;
+      margin-bottom: 0px;
+      @include mini-fancy-divider;
     }
   }
 }

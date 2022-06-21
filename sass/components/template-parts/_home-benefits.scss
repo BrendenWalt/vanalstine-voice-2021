@@ -1,12 +1,12 @@
 .home-benefits {
   $icon-card-size: 110px;
   $icon-size: 60px;
-
   text-align: center;
   h2 {
     color: $color__text-primary;
     margin-bottom: 4rem;
     position: relative;
+    padding-bottom: 25px;
     @include fancy-divider;
   }
   h3 {
@@ -65,5 +65,10 @@
   .section-title {
     display: inline-block;
     margin: 0 auto;
+  }
+  @media screen and (min-width: $screen-sm-min) {
+    h2 {
+      padding-bottom: 0px;
+    }
   }
 }

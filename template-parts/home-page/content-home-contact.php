@@ -20,7 +20,7 @@
       
     </div>
 
-    <div class="home-contact-image">
+    <div class="home-contact-image uk-visible@s">
       <img src="https://via.placeholder.com/2000" alt="">
     </div>
   </div>

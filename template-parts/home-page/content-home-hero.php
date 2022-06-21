@@ -36,7 +36,7 @@
           ))
         ?>
       </div>
-      <div class="home-hero-scroll-indicator">
+      <div class="home-hero-scroll-indicator uk-visible@m">
         <p>Learn More</p>
         <img src="<?php bloginfo('stylesheet_directory')?>/assets/icons/arrow-down-02.svg" />
       </div>

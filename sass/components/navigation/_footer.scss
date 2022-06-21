@@ -1,24 +1,29 @@
 // Theme Footer
+$bottom-spacing: 20px;
+
 .site-footer {
 	background-color: $color__background-footer;
-	margin: 40px 0px 0px;
+	margin: 25px 0px 0px;
 	padding: 10px;
+	@media screen and (min-width: $screen-sm-min) {
+		margin-top: 40px;
+	}
 	.container {
 		max-width: $content_max-width;
 		margin: 0 auto;
 		display: flex;
-		align-items: baseline;
+		align-items: center;
 		flex-direction: row;
 		justify-content: center;
-		@include stack-mobile($screen-xs-max);
+		@include stack-mobile($screen-sm-min);
 		p {
 			margin: 0;
 		}
-		
 		.left, .right {
 			flex: 1;
 		}
 		@media screen and (min-width: $screen-sm-min) {
+			align-items: baseline;
 			.footer-site-branding {
 				order: 2;
 			}
@@ -40,7 +45,7 @@
 		}
 	}
 	.footer-site-branding {
-		margin-bottom: 15px;
+		margin-bottom: $bottom-spacing;
 		flex: 1;
 		text-align: center;
 		h4 {
@@ -55,6 +60,7 @@
 	}
 	.footer-site-nav {
 		flex:1;
+		margin-bottom: $bottom-spacing;
 		nav ul li {
 			vertical-align: top;
 		}
@@ -62,6 +68,7 @@
 	.footer-social-menu {
 		flex: 1;
 		text-align: right;
+		margin-bottom: $bottom-spacing;
 		i {
 			font-size: 26px;
 			color: $color__brand-secondary;

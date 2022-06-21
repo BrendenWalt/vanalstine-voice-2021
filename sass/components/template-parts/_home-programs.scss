@@ -1,13 +1,14 @@
 .home-programs {
   background-color: white;
-  padding: 0px 5%;
+  padding: 0px 8%;
   margin-top: 0px;
   text-align: center;
   h2 {
     color: $color__text-primary;
     display: inline-block;
     margin-top: 0px;
-    margin-bottom: 45px;
+    margin-bottom: 5px;
+    padding-bottom: 25px;
     position: relative;
     @include fancy-divider;
   }
@@ -46,8 +47,8 @@
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.18);
     }
     &:nth-of-type(2) {
-      margin-top: 60px;
-      margin-bottom: 60px;
+      margin-top: 45px;
+      margin-bottom: 45px;
     }
     @media screen and (min-width: $screen_sm_min) {
       min-height: 65vh;
@@ -72,6 +73,7 @@
     width: 100%;
     min-height: 275px;
     height: 100%;
+    display: flex;
     &:after {
       position: absolute;
       content: '';
@@ -83,9 +85,10 @@
       background:linear-gradient(180deg, #ffffff 9%, rgba(255, 255, 255, 0) 100%);
     }
     img {
+      flex: 1;
       object-fit: cover;
       width: 100%;
-      height: 100%;
+      // height: 100%;
     }
   }
   .program-info {
@@ -106,6 +109,12 @@
     div {
       padding-bottom: 5px;
       border-bottom: 2px solid $color__brand-primary;
+    }
+  }
+  @media screen and (min-width: $screen-sm-min) {
+    h2 {
+      margin-bottom: 45px;
+      padding-bottom: 0px;
     }
   }
 }
