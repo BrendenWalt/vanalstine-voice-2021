@@ -63,6 +63,10 @@ $bottom-spacing: 20px;
 		margin-bottom: $bottom-spacing;
 		nav ul li {
 			vertical-align: top;
+			a:hover {
+				color: $color__brand-secondary;
+				text-decoration: underline;
+			}
 		}
 	}
 	.footer-social-menu {

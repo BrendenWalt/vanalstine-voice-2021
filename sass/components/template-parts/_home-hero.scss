@@ -107,27 +107,14 @@
     }
   }
   .home-site-tagline {
+    color: $color__text-primary;
+    font-size: 1.5rem;
     font-style: italic;
     margin-left: -0.5em;
     position: relative;
     display: inline-block;
     padding-bottom: 15px;
-    &:before {
-      content: '';
-      width: 115%;
-      border-bottom: 2px solid $color__brand-primary;
-      position: absolute;
-      bottom: 0px;
-      right: -35%;
-    }
-    &:after {
-      content: '';
-      width: 115%;
-      border-bottom: 2px solid $color__brand-primary;
-      position: absolute;
-      bottom: calc(0px - 8px);
-      right: calc(-35% - 20%);
-    }
+    @include mini-fancy-divider;
     @media screen and (max-width: $screen-xs-max) { 
       margin-left: 0;
     }

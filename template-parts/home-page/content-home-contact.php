@@ -1,28 +1,33 @@
 <?php
-
+  $form = get_field('contact_form_shortcode');
+  $title = get_field('contact_form_title');
+  $image = get_field('contact_image');
 ?>
 
 <section id="home-contact" class="home-contact-form-section">
 
-  <div class="content-container">
+  <div class="content-container <?php echo (empty($image) ? 'no-img' : '') ?>">
     <div class="home-contact-form">
       <div class="contact-title-container">
         <h2>
-          Ready To Learn More?
+          <?php echo (($title) ? $title : acf_get_field('contact_form_title')['default_value'] ); ?>
         </h2>
       </div>
 
       <div class="contact-form-container uk-card uk-card-default">
         <div class="uk-card-body">
-         <?php echo do_shortcode("[contact-form-7 id=\"106\" title=\"Contact form 1\"]") ?>
+         <?php echo do_shortcode($form) ?>
         </div>
       </div>
-      
     </div>
 
-    <div class="home-contact-image uk-visible@s">
-      <img src="https://via.placeholder.com/2000" alt="">
-    </div>
+    <?php if(!empty($image)) { ?>
+      <div class="home-contact-image uk-visible@s">
+        <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt'])?>">
+      </div>
+    <?php } ?>
+
+   
   </div>
   
 </section>

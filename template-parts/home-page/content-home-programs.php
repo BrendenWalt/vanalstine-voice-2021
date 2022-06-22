@@ -19,12 +19,12 @@
     ?>
  
     <?php
-        foreach( $featured_programs as $post ):
-          $program_title = get_field('program_title', $post->ID);
-          $program_description = get_field('program_description', $post->ID);
-          $button_text = get_field('program_button_text', $post->ID);
-          $program_button_link = get_field('program_button_link', $post->ID);
-          $program_image = get_field('program_image', $post->ID);
+      foreach( $featured_programs as $post ):
+        $program_title = get_field('program_title', $post->ID);
+        $program_description = get_field('program_description', $post->ID);
+        $button_text = get_field('program_button_text', $post->ID);
+        $program_button_link = get_field('program_button_link', $post->ID);
+        $program_image = get_field('program_image', $post->ID);
     ?>
 
     <!-- program card -->

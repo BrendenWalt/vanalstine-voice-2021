@@ -7,8 +7,7 @@
   <div class="home-hero-container">
     <div class="home-hero-headshot">
       <?php if(!empty($hero_image)): ?>
-        <!-- <img src="<?php echo($hero_image['url']); ?>" alt="<?php echo($hero_image['alt']); ?>" /> -->
-        <img src="https://via.placeholder.com/720x850" alt="">
+        <img src="<?php echo($hero_image['url']); ?>" alt="<?php echo($hero_image['alt']); ?>" />
       <?php endif; ?>
     </div>
 

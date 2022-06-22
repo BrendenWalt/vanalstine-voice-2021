@@ -1,5 +1,5 @@
 <?php
-  $about_image           = get_field('about_image');
+  $about_image           = get_field('home_about_image');
   $about_headline        = get_field('about_headline');
   $about_text            = get_field('about_text');
   $about_btn_text        = get_field('about_button_text');

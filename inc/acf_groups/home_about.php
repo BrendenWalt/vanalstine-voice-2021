@@ -77,9 +77,9 @@
         'placeholder' => '',
       ),
       array(
-        'key' => 'field_600b5a4197a48',
+        'key' => 'field_600b5a4197_abt',
         'label' => 'Image',
-        'name' => 'about_image',
+        'name' => 'home_about_image',
         'type' => 'image',
         'instructions' => '',
         'required' => 0,
@@ -100,6 +100,7 @@
         'max_size' => '',
         'mime_types' => '',
       ),
+     
     ),
     'location' => array(
       array(
@@ -110,7 +111,7 @@
         ),
       ),
     ),
-    'menu_order' => 0,
+    'menu_order' => 4,
     'position' => 'normal',
     'style' => 'default',
     'label_placement' => 'top',

@@ -26,8 +26,8 @@
         <div class="home-benefit-card">
           <div class="home-benefit-icon">
             <div>
-              <?php if($benefit_1['icon']) { 
-                echo  $benefit_1['icon'];
+              <?php if($benefit_1['icon_01']) { 
+                echo  $benefit_1['icon_01'];
               } else {
                 $default = acf_get_field('icon_01')['default_label'];
                 echo html_entity_decode( $default );
@@ -46,8 +46,8 @@
         <div class="home-benefit-card">
         <div class="home-benefit-icon">
           <div>
-            <?php if($benefit_2['icon']) { 
-              echo  $benefit_2['icon'];
+            <?php if($benefit_2['icon_02']) { 
+              echo  $benefit_2['icon_02'];
              } else {
               $default = acf_get_field('icon_02')['default_label'];
               echo html_entity_decode( $default );
@@ -66,8 +66,8 @@
         <div class="home-benefit-card">
           <div class="home-benefit-icon">
             <div>
-              <?php if($benefit_3['icon']) { 
-                echo  $benefit_3['icon'];
+              <?php if($benefit_3['icon_03']) { 
+                echo  $benefit_3['icon_03'];
               } else {
                 $default = acf_get_field('icon_03')['default_label'];
                 echo html_entity_decode( $default );
@@ -86,8 +86,8 @@
         <div class="home-benefit-card">
           <div class="home-benefit-icon">
             <div>
-              <?php if($benefit_4['icon']) { 
-                echo  $benefit_4['icon'];
+              <?php if($benefit_4['icon_04']) { 
+                print_r($benefit_4['icon_04']) ;
               } else {
                 $default = acf_get_field('icon_04')['default_label'];
                 echo html_entity_decode( $default );
@@ -95,8 +95,8 @@
             </div>
           </div>
           <div class="home-benefit-card-text">
-            <h3><?php echo $benefit_3['benefit_title']; ?></h3>
-            <p><?php echo $benefit_3['benefit_text']; ?></p>
+            <h3><?php echo $benefit_4['benefit_title']; ?></h3>
+            <p><?php echo $benefit_4['benefit_text']; ?></p>
           </div>
         </div>
       <?php endif; ?>

@@ -119,15 +119,12 @@
     }
   }
   @media only screen and (min-width: $screen-sm-min) {
-    margin: 185px 0px;
+    margin: 165px 0px;
     h4 {
       font-size: 36px;
       line-height: 54px;
     }
     .carousel-container {
-      &:before {
-        
-      }
       &:after {
         bottom: -50%;
         right: 45px;
