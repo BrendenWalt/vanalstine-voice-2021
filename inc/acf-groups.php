@@ -22,6 +22,7 @@
     // Custom Posts
     include 'acf_groups/home_testimonials.php';
     include 'acf_groups/post_program.php';
+    include 'acf_groups/post_faq.php';
   endif;
 
 ?>
