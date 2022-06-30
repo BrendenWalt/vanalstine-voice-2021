@@ -6,7 +6,7 @@
 ?>
 
 <?php if (!empty($banner_image)){ ?>
-<section class="home-cta-banner" uk-parallax="bgy: -200" style="background-image: url('<?php echo($banner_image['url']); ?>')">
+<section id="home-section-banner" class="home-cta-banner" uk-parallax="bgy: -200" style="background-image: url('<?php echo($banner_image['url']); ?>')">
 <?php } else { ?>
 <section class="home-cta-banner no-image">
 <?php } ?>

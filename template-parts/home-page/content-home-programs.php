@@ -9,7 +9,7 @@
   )
 ?>
 
-<section class="home-programs">
+<section id="home-section-programs" class="home-programs">
   <h2 class=section-title><?php echo(empty($section_title) ? (acf_get_field('programs_section_title')['default_value']) : $section_title ); ?></h2>
   <div class="home-programs-container"  uk-scrollspy="target: > div; cls:uk-animation-fade uk-animation-slide-bottom-medium; delay: 200">
 

@@ -306,7 +306,7 @@ function cptui_register_faq_cpts() {
 	$labels = [
 		"name" => __( "FAQs", "vanalstine-voice" ),
 		"singular_name" => __( "FAQ", "vanalstine-voice" ),
-		"menu_name" => __( "My FAQs", "vanalstine-voice" ),
+		"menu_name" => __( "FAQs", "vanalstine-voice" ),
 		"all_items" => __( "All FAQs", "vanalstine-voice" ),
 		"add_new" => __( "Add new", "vanalstine-voice" ),
 		"add_new_item" => __( "Add new FAQ", "vanalstine-voice" ),

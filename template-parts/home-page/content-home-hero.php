@@ -3,7 +3,7 @@
 ?>
 
 <!-- HOME HERO -->
-<section class="home-hero section-no-pad-mobile">
+<section id="home-section-hero" class="home-hero section-no-pad-mobile">
   <div class="home-hero-container">
     <div class="home-hero-headshot">
       <?php if(!empty($hero_image)): ?>

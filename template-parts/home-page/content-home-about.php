@@ -6,7 +6,7 @@
   $about_btn_url         = get_field('about_button_link');
 ?>
 
-<section class="home-about">
+<section id="home-section-about" class="home-about">
   <div class="content-container" uk-scrollspy="target: .home-about-text-container;cls:uk-animation-fade uk-animation-slide-right-medium; delay: 300">
     <div class="home-about-img">
       <?php if(!empty($about_image)) { ?>

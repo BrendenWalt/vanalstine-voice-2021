@@ -14,7 +14,7 @@
 
 ?>
 
-<section class="home-benefits">
+<section id="home-section-benefits" class="home-benefits">
   <div class="section-title">
     <h2 class="uk-text-center"><?php echo((empty($header)) ? (acf_get_field('section_title')['default_value']) : $header ); ?></h2>
   </div>

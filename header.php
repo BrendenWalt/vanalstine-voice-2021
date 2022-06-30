@@ -52,7 +52,7 @@
 							'theme_location'	=>	'header-menu-pages',
 							'container' 			=>	'nav',
 							'container_class'	=>	'navbar-header-links',
-							'menu_class'			=>	''
+							'menu_class'			=>	'',
 						))
 					?>
 					<div class="header-login">
