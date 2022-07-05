@@ -1,6 +1,14 @@
 window.onload = function() {
 	console.log('js is running');
 
+	// add uk-scroll attribute to links in header menu
+	const menuLinks = document.querySelectorAll( '.navbar-header-links li a' );
+	menuLinks.forEach( setScroll );
+
+	function setScroll( anchorLink ) {
+		anchorLink.setAttribute( 'uk-scroll', '' );
+	}
+
 	// let slideIndex = 0;
 
 	// Get Elements

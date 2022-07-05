@@ -4,8 +4,8 @@
   $image = get_field('contact_image');
 ?>
 
-<section id="home-section-contact" class="home-contact-form-section">
-
+<section class="home-contact-form-section">
+  <a id="home-section-contact" class="home-anchor"></a>
   <div class="content-container <?php echo (empty($image) ? 'no-img' : '') ?>">
     <div class="home-contact-form">
       <div class="contact-title-container">

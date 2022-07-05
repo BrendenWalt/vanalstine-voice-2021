@@ -3,7 +3,8 @@
   $video = get_field('home_video');
 ?>
 
-<section id="home-section-intro" class="home-video" uk-scrollspy="target: .scroll-to-top; cls: uk-animation-fade; delay: 300">
+<section class="home-video" uk-scrollspy="target: .scroll-to-top; cls: uk-animation-fade; delay: 300">
+  <a id="home-section-intro" class="home-anchor"></a>
   <div class="home-video-container content-container">
     <div class="video">
       <?php the_field('home_video'); ?>

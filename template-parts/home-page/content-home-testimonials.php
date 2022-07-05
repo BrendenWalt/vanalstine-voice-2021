@@ -11,7 +11,8 @@
 
   if ($loop->have_posts()) {
 ?>
-  <section id="home-section-testimonials" class="home-testimonials">
+  <section class="home-testimonials">
+    <a id="home-section-testimonials" class="home-anchor"></a>
     <div class="carousel-container">
       <div class="content-container swiper-container">
         

@@ -154,3 +154,10 @@ section.section-no-pad-mobile {
     background-color: lighten($color__brand-secondary, 8%);
   }
 }
+
+.home-anchor {
+  display: block;
+  position: relative;
+  top: -110px;
+  visibility: hidden;
+}
