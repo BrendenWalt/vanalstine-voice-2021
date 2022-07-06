@@ -1,0 +1,8 @@
+.elementor {
+  .elementor-section {
+    margin: 45px auto;
+    &.elementor-section-boxed > .elementor-container {
+      max-width: $content-max-width;
+    }
+  }
+}

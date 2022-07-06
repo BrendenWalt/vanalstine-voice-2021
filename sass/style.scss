@@ -105,6 +105,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 --------------------------------------------- */
 @import "generic/theme-styles";
 
+/* Elementor Override Styles
+--------------------------------------------- */
+@import "generic/elementor-styles";
+
 /* Template Parts
 --------------------------------------------- */
 @import "components/template-parts/site-contact-forms";
