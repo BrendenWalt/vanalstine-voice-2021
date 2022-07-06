@@ -3,7 +3,7 @@
   height:calc(100vh - #{$header-offset});
   display: flex;
   align-items: baseline;
-  margin-top: $header-offset;
+  margin-top: 0;
   margin-bottom: 0;
   
   .home-site-title  {
