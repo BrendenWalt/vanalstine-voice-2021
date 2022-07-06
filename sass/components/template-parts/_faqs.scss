@@ -1,0 +1,23 @@
+.faqs-container {
+  .faq-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .faq-item {
+
+  }
+  .faq-answer {
+    border-top: 1px solid $color__brand-secondary;
+    margin-left: 8%;
+    margin-right: 4%;
+    p strong {
+      font-weight: bold;
+    }
+  }
+  .uk-accordion {
+    margin-left: 0;
+  }
+}
