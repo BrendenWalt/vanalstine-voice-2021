@@ -45,22 +45,33 @@
 				</h2>
 			</div><!-- .site-branding -->
 
+			<!-- Desktop Menu -->
 			<div class="header-nav header-right-nav">
 				<div class="header-menu-desktop">
 					<?php
+					if ( is_page_template('template-home.php')) {
+						wp_nav_menu( array(
+							'theme_location'	=>	'header-menu-home',
+							'container' 			=>	'nav',
+							'container_class'	=>	'navbar-header-links',
+							'menu_class'			=>	'',
+						));
+					} else {
 						wp_nav_menu( array(
 							'theme_location'	=>	'header-menu-pages',
 							'container' 			=>	'nav',
 							'container_class'	=>	'navbar-header-links',
 							'menu_class'			=>	'',
-						))
+						));
+					}
+						
 					?>
 					<div class="header-login">
 						<a class=cta-primary>Login</a>
 					</div>
 				</div>
 			
-
+				<!-- Mobile Menu -->
 				<div class="header-mobile-menu uk-navbar-transparent uk-navbar-container">
 					<a href="#offcanvas-slide" class="uk-navbar-toggle uk-icon-link" uk-icon="icon: menu; ratio: 1.5;" uk-toggle></a>
 

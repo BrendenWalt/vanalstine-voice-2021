@@ -65,6 +65,7 @@ if ( ! function_exists( 'vanalstine_voice_setup' ) ) :
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus(
 			array(
+				'header-menu-home' => __('Home Page Menu'),
 				'header-menu-pages' => __( 'Main Header Menu'),
 				'social-menu' => __('Social Menu'),
 				'footer_menu' => __('Footer Menu')
