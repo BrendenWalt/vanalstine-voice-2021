@@ -115,19 +115,29 @@
 @mixin mini-fancy-divider {
 	&:before {
 		content: '';
-		width: 100%;
+		width: 85%;
 		border-bottom: 2px solid $color__brand-primary;
 		position: absolute;
 		bottom: 0px;
-		left: 15%;
+		left: 0%;
 	}
 	&:after {
 		content: '';
-		width: 100%;
+		width: 55%;
 		border-bottom: 2px solid $color__brand-primary;
 		position: absolute;
 		bottom: calc(0px - 8px);
-		right: calc(-28%);
+		left: 0%;
+	}
+	@media only screen and (min-width: $screen-sm-min) {
+		&:before {
+			left: 15%;
+			width: 100%;
+		}
+		&:after {
+			right: -28%;
+			width: 100%;
+		}
 	}
 }
 
