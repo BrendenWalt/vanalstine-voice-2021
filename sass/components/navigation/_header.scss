@@ -63,12 +63,12 @@ nav ul {
 		}
 
 		.header-menu-desktop {
-			display: flex;
+			display: none;
 			align-items: center;
 		}
 
 		.header-mobile-menu {
-			display: none;
+			display: block;
 			.navbar-header-links {
 				margin-top: 20px;
 				ul {
@@ -101,12 +101,12 @@ nav ul {
 		.uk-offcanvas-bar {
 			background-color: #fff;
 		}
-		@media screen and (max-width: $screen-xs-max) {
+		@media screen and (min-width: $screen-lg-min) {
 			.header-mobile-menu {
-				display: block;
+				display: none;
 			}
 			.header-menu-desktop {
-				display: none;
+				display: flex;
 			}
 		}
 	}

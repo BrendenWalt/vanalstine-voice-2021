@@ -20,7 +20,7 @@
   }
   .home-benefits-cards-container {
     margin-bottom: 4rem;
-    @include stack-mobile($screen-xs-max);
+    // @include stack-mobile($screen-xs-max);
   }
   .home-benefit-card {
    display: block;

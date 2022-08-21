@@ -25,7 +25,7 @@
       position: relative;
       top: 0;
       left: 0;
-      height: 79vh;
+      height: calc(100vh - #{$header-offset});
       img {
         height: 100%;
         width: 100%;
@@ -37,11 +37,12 @@
       padding: 15px 5%;
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: center;
       flex-direction: column;
      .contact-title-container {
         align-self: flex-start;
         display: block;
+        margin-bottom: 45px;
         width: 100%;
       }
       .wpcf7 {
