@@ -1,12 +1,12 @@
 .home-video {
-  padding: 0px 3%;
+  padding: 0px 8%;
   .home-video-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     position: relative;
-    @include stack-mobile($screen-sm-min);
+    @include stack-mobile($screen-sm-max);
   }
   .video {
     width: 100%;
@@ -26,7 +26,7 @@
       width: 100%;
       height: 100%;
     }
-    @media screen and (min-width: $screen-sm-min) {
+    @media screen and (min-width: $screen-sm-max) {
       margin-right: 50px;
       padding-bottom: 27%;
       width: 50%;
@@ -39,14 +39,35 @@
     position: relative;
     margin-top: 50px;
     width: 100%;
-    @media only screen and (max-width: $screen-xs-max) {
+    @media only screen and (max-width: $screen-sm-max) {
       @include fancy-divider-top;
     }
-    @media screen and (min-width: $screen-sm-min) {
+    @media screen and (min-width: $screen-sm-max) {
       padding: 50px;
       margin-top: 0px;
       width: 50%;
       @include fancy-divider-vert;
+    }
+  }
+  .no-video.home-video-container {
+    justify-content: center;
+    .video-textarea {
+      margin: 0px 3% 0px;
+      padding: 0px 0 35px;
+      @include fancy-divider;
+      &:after {
+        top: unset;
+        right: 0;
+        border-left: none;
+        width: calc(100% - 6%);
+      }
+      &:before {
+        top: unset;
+        right: -12%;
+        border-left: none;
+        width: calc(100% - 6%);
+      }
+      
     }
   }
 }

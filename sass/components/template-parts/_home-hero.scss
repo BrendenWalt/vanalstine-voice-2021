@@ -148,6 +148,11 @@
       margin-right: auto;
       transform: translateX(-5vw);
     }
+    &.uk-box-shadow-small {
+      @media screen and (min-width: $screen-sm-min) {
+        box-shadow: none;
+      }
+    }
   }
   .home-site-tagline {
     color: $color__text-primary;
