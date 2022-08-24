@@ -12,7 +12,7 @@
       <?php endif; ?>
     </div>
 
-    <div class="home-hero-text-content">
+    <div class="home-hero-text-content uk-box-shadow-small">
       <div class="home-site-title">
         <h1>
           <span>
