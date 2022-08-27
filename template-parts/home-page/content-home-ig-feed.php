@@ -1,5 +1,6 @@
 <?php
   $ig_feed_headline    = get_field('ig_headline');
+  $ig_shortcode        = get_field('ig_shortcode');
 ?>  
 
 <section  class="home-ig-feed section-no-pad-mobile">

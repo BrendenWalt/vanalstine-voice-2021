@@ -22,6 +22,25 @@ acf_add_local_field_group(array(
       'rows' => '',
       'new_lines' => '',
     ),
+    array(
+      'key' => 'field_home_ig_feed_short',
+      'label' => 'Shortcode',
+      'name' => 'ig_shortcode',
+      'type' => 'text',
+      'instructions' => '',
+      'required' => 1,
+      'conditional_logic' => 0,
+      'wrapper' => array(
+        'width' => '',
+        'class' => '',
+        'id' => '',
+      ),
+      'default_value' => '',
+      'placeholder' => '[instagram-feed feed=1]',
+      'maxlength' => '',
+      'rows' => '',
+      'new_lines' => '',
+    ),
   ),
   'location' => array(
     array(
