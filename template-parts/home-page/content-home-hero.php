@@ -20,7 +20,7 @@
           </span>
         </h1>
       </div>
-      <div class="home-site-tagline">
+      <div class="home-site-tagline uk-animation-fade uk-animation-slide-right-medium">
         <?php echo(get_bloginfo('description')); ?>
       </div>
       
