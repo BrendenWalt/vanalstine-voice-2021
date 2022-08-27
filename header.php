@@ -67,7 +67,7 @@
 						
 					?>
 					<div class="header-login">
-						<a class=cta-primary>Login</a>
+						<a class="cta-primary" id="student-login">Login</a>
 					</div>
 				</div>
 			
@@ -87,7 +87,7 @@
 								))
 							?>
 							<div class="header-login">
-								<a class=cta-primary>Login</a>
+								<a id="student-login" class="cta-primary">Login</a>
 							</div>
 						</div>
 					</div>
