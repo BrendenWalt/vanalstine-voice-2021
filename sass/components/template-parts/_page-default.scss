@@ -1,3 +1,19 @@
-div[data-elementor-type="wp-page"] {
-  margin-top: 109px;
+// div[data-elementor-type="wp-page"] {
+//   margin-top: 109px;
+// }
+.site-main {
+  padding-left: 5%;
+  padding-right: 5%;
+  article.page {
+    max-width: $content__med-width;
+    margin: 0 auto;
+    h1 {
+      color: $color__text-primary;
+      font-size: 4em;
+    }
+    section {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
 }
