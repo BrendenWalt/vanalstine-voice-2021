@@ -1,5 +1,9 @@
 <?php
   $section_title = get_field('programs_section_title');
+  $prg_button_text = get_field('programs_button_text');
+  $prg_button_text_obj = acf_get_field('programs_button_text')['default_value'];
+  $prg_button_link = get_field('programs_button_link');
+
 
   $args = array(
     'post_type' => 'programs',
@@ -23,9 +27,12 @@
       foreach( $featured_programs as $post ):
         $program_title = get_field('program_title', $post->ID);
         $program_description = get_field('program_description', $post->ID);
-        $button_text = get_field('program_button_text', $post->ID);
-        $program_button_link = get_field('program_button_link', $post->ID);
         $program_image = get_field('program_image', $post->ID);
+
+        // Fields for individual program cards
+        // $button_text = get_field('program_button_text', $post->ID);
+        // $program_button_link = get_field('program_button_link', $post->ID);
+        
     ?>
 
     <!-- program card -->
@@ -37,7 +44,10 @@
             <?php echo( $program_description ); ?>
           </div>
         </div>
-        <a class="cta-secondary" href="<?php echo ( !empty($program_button_link) ? esc_url($program_button_link) : '#home-contact'); ?>"><?php echo( $button_text ); ?></a>
+        
+        <!-- individual CTA per program -->
+        <!-- <a class="cta-secondary" href="<?php /* echo ( !empty($program_button_link) ? esc_url($program_button_link) : '#home-contact'); ?>"><?php echo( $button_text );  */?></a> -->
+        
       </div>
      
       <div class="program-image uk-card-media-bottom">
@@ -53,10 +63,15 @@
     <?php 
       endforeach;
     ?>
+    
+
     <?php
       wp_reset_postdata();
       endif;
     ?>
 
   </div>
+  <div>
+      <a class="cta-secondary" href="<?php echo ( !empty($prg_button_link) ? esc_url($prg_button_link) : '#home-section-contact'); ?>"><?php echo ( !empty($prg_button_text) ? ($prg_button_text) : $prg_button_text_obj ); ?></a>
+    </div>
 </section>
