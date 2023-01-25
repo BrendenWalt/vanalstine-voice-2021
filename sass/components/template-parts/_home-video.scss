@@ -57,15 +57,20 @@
       @include fancy-divider;
       &:after {
         top: unset;
-        right: 0;
+        left: 50%;
+        // left: 5%;
         border-left: none;
-        width: calc(100% - 6%);
+        width:65%;
+        max-width: 1000px;
+        transform: translateX(-50%);
       }
       &:before {
         top: unset;
-        right: -12%;
+        left: 50%;
         border-left: none;
-        width: calc(100% - 6%);
+        width:85%;
+        max-width: 1000px;
+        transform: translateX(-50%);
       }
       
     }

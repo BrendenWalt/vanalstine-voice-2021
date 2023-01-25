@@ -41,11 +41,11 @@
 @mixin fancy-divider {
 	&:before {
 		content: '';
-		width: 85%;
+		width: 100%;
 		border-bottom: 2px solid $color__brand-primary;
 		position: absolute;
 		bottom: 0px;
-		left: 50%;
+		right: 8%;
 		transform: translateX(-50%);
 	}
 	&:after {
@@ -59,14 +59,14 @@
 	}
 	@media screen and (min-width: $screen-md-min) {
 		&:before {
-			width: 115%;
-			right: -35%;
+			width: 85%;
+			right: -5%;
 			left: unset;
 			transform: initial;
 		}
 		&:after {
-			width: 115%;
-			right: calc(-35% - 20%);
+			width: 85%;
+			right: 5%;
 			left: unset;
 			transform: initial;
 		}
@@ -131,12 +131,14 @@
 	}
 	@media only screen and (min-width: $screen-sm-min) {
 		&:before {
-			left: 15%;
-			width: 100%;
+			left: unset;
+			right: -5%;
+			width: 85%;
 		}
 		&:after {
-			right: -28%;
-			width: 100%;
+			right: 5%;
+			left: unset;
+			width: 85%;
 		}
 	}
 }
