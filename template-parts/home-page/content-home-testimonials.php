@@ -19,6 +19,7 @@
         <div class="testimonials-container swiper-wrapper">
     <?php
       while ( $loop->have_posts() ) : $loop->the_post();
+      if( !get_field('deactivate')) {
     ?>
 
           <blockquote class="testimonial-card-container swiper-slide">
@@ -34,6 +35,7 @@
           </blockquote>
 
     <?php
+      }
       endwhile;
       wp_reset_postdata();
     ?>
