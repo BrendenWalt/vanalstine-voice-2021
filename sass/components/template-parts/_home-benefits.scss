@@ -59,7 +59,7 @@
     text-align: center;
     @include stack-mobile($screen-xs-max);
     @media screen and (max-width: $screen-xs-max) {
-      display: flex;
+      // display: flex;
     }
   }
   .section-title {
