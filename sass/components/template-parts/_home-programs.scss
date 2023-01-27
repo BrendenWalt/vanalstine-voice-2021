@@ -29,12 +29,13 @@
     flex-direction: row;
     margin: 40px auto 0;
     justify-content: space-evenly;
-    align-items: stretch;
-    @include stack-mobile($screen-xs-max);
+    align-items: center;
+    flex-wrap: wrap;
+    
   }
   .home-program-card {
     border-radius: 15px;
-    width: 100%;
+    flex: 1 0 320px;
     max-width: 450px;
     display: flex;
     flex-direction: column;
@@ -118,4 +119,5 @@
       padding-bottom: 0px;
     }
   }
+  
 }
