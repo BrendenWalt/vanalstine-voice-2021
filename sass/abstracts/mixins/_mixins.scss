@@ -41,21 +41,23 @@
 @mixin fancy-divider {
 	&:before {
 		content: '';
-		width: 100%;
+		width: 85%;
 		border-bottom: 2px solid $color__brand-primary;
 		position: absolute;
 		bottom: 0px;
-		right: 8%;
-		transform: translateX(-50%);
+		right: -5%;
+		max-width: 450px;
+		// transform: translateX(-50%);
 	}
 	&:after {
 		content: '';
-		width:65%;
+		width: 85%;
 		border-bottom: 2px solid $color__brand-primary;
 		position: absolute;
 		bottom: calc(0px - 8px);
-		left: 50%;
-		transform: translateX(-50%);
+		right: 5%;
+		max-width: 450px;
+		// transform: translateX(-50%);
 	}
 	@media screen and (min-width: $screen-md-min) {
 		&:before {

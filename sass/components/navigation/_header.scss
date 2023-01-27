@@ -124,10 +124,14 @@ nav ul {
 		display: block;
 	}
 	h2 {
+		font-family: $font-headline;
 		color: $color__text-primary;
 		line-height: 100%;
 		text-align: left;
 		font-size: 27px;
 		margin: 0px 0px 0px 20px;
+		span {
+			font-family: $font-headline;
+		}
 	}
 }
