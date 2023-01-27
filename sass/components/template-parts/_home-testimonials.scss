@@ -1,4 +1,6 @@
 .home-testimonials {
+  padding-left: 0;
+  padding-right: 0;
   position: relative;
   margin: 80px 0;
   h4 {
@@ -16,6 +18,7 @@
     max-width: 1200px;
     margin: 0px auto;
     position: relative;
+    width: 80%;
     &:before,
     &:after {
       font-family: "Font Awesome 5 Free";
@@ -28,14 +31,16 @@
     }
     &:before {
       content:'\f10d';
-      top: -8rem;
+      top: 0;
       left: 0px;
+      transform: translateY(-10%);
      
     }
     &:after {
       content:'\f10e';
-      bottom: -40%;
+      bottom: 0;
       right: 0px;
+      transform: translateY(25%);
       visibility: hidden;
     }
   }
@@ -119,14 +124,13 @@
     }
   }
   @media only screen and (min-width: $screen-sm-min) {
-    margin: 165px 0px;
     h4 {
       font-size: 36px;
       line-height: 54px;
     }
     .carousel-container {
       &:after {
-        bottom: -50%;
+        // bottom: -50%;
         right: 45px;
         visibility: visible;
       }
