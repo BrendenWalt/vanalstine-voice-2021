@@ -1,5 +1,7 @@
 <!-- Query Testimonial posts -->
 <?php
+
+
   $args = array(
     'post_type' => 'testimonials',
     'post_status' => 'publish',
@@ -20,12 +22,21 @@
     <?php
       while ( $loop->have_posts() ) : $loop->the_post();
       if( !get_field('deactivate')) {
+        $image = get_field('testimonial_image');
     ?>
 
           <blockquote class="testimonial-card-container swiper-slide">
             <div class="slide-content">
               <h4><?php echo the_field('testimonial_text') ?></h4>
+              <!-- Testimonial image -->
+              <?php if(!empty( $image )) : ?>
+                <div class="testimonial-img">
+                  <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr( $image['alt']); ?>">
+                </div>
+              <?php endif; ?>
               <footer>
+              
+            
                 <strong><?php echo the_field('testimonial_name') ?></strong><br>
                 <?php if (!empty(the_field('testimonial_subtitle'))) : ?>
                   <i><?php echo the_field('testimonial_subtitle') ?></i>

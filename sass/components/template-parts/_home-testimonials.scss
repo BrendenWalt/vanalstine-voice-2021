@@ -43,6 +43,16 @@
       transform: translateY(25%);
       visibility: hidden;
     }
+    .testimonial-img {
+      display: inline-block;
+      img {
+        display: block;
+        border-radius: 50%;
+        border: 3px solid $color__brand-secondary;
+        width: 75px;
+        height: 75px;
+      }
+    }
   }
   
   // SWIPER STYLES
