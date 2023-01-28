@@ -5,11 +5,22 @@ ol {
 
 ul {
 	list-style: disc;
+	list-style-type: circle;
 }
 
 ol {
 	list-style: decimal;
 }
+
+ul li {
+	// padding-left: 8px;
+	margin-bottom: 5px;
+}
+
+// ul li::marker {
+// 	content: "\f001";
+// 	font-family: FontAwesome;
+// }
 
 li > ul,
 li > ol {

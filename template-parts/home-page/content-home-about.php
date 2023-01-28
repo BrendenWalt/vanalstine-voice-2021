@@ -1,7 +1,7 @@
 <?php
   $about_image           = get_field('home_about_image');
   $about_headline        = get_field('about_headline');
-  $about_text            = get_field('about_text');
+  $about_text_full       = get_field('abt_text_block');
   $about_btn_text        = get_field('about_button_text');
   $about_btn_url         = get_field('about_button_link');
 ?>
@@ -21,7 +21,7 @@
         <h2>
           <?php echo (!empty($about_headline) ? $about_headline : 'About' ) ?>
         </h2>
-        <p><?php echo $about_text ?></p>
+        <?php echo $about_text_full ?>
       </div>
       <div class="about-cta-container">
         <a class="cta-primary color-secondary" href="<?php echo (!empty($about_btn_url) ? $about_btn_url : '#contact-home'); ?>"><?php echo (!empty( $about_btn_text) ? $about_btn_text : 'Learn More' ) ?></a>
