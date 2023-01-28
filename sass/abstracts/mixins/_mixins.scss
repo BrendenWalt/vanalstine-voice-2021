@@ -45,7 +45,7 @@
 		border-bottom: 2px solid $color__brand-primary;
 		position: absolute;
 		bottom: 0px;
-		right: -5%;
+		right: 0%;
 		max-width: 450px;
 		// transform: translateX(-50%);
 	}
@@ -55,7 +55,7 @@
 		border-bottom: 2px solid $color__brand-primary;
 		position: absolute;
 		bottom: calc(0px - 8px);
-		right: 5%;
+		right: 10%;
 		max-width: 450px;
 		// transform: translateX(-50%);
 	}
