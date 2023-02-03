@@ -79,12 +79,22 @@
 						<div class="uk-offcanvas-bar">
 							<button class="uk-offcanvas-close" type="button" uk-close="ratio: 1.5" ></button>
 							<?php
-								wp_nav_menu( array(
-									'theme_location'	=>	'header-menu-pages',
-									'container' 			=>	'nav',
-									'container_class'	=>	'navbar-header-links',
-									'menu_class'			=>	''
-								))
+
+								if ( is_page_template('template-home.php')) {
+									wp_nav_menu( array(
+										'theme_location'	=>	'header-menu-home',
+										'container' 			=>	'nav',
+										'container_class'	=>	'navbar-header-links',
+										'menu_class'			=>	'',
+									));
+								} else {
+									wp_nav_menu( array(
+										'theme_location'	=>	'header-menu-pages',
+										'container' 			=>	'nav',
+										'container_class'	=>	'navbar-header-links',
+										'menu_class'			=>	'',
+									));
+								}
 							?>
 							<div class="header-login">
 								<a id="student-login" class="cta-primary">Login</a>
