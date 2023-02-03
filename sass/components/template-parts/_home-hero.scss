@@ -4,6 +4,7 @@
   align-items: baseline;
   margin-top: 0;
   margin-bottom: 0;
+  overflow: hidden;
   @media only screen and (min-width: $screen-sm-min) {
     height: calc(100vh - #{$header-offset});
   }
@@ -13,7 +14,7 @@
       color: $color__text-white;
       font-family: $font-headline;
       font-variant: petite-caps;
-      font-size: 3.5em;
+      font-size: 3.0em;
       text-align: right;
       line-height:105%;
       
@@ -23,6 +24,11 @@
       padding: 0px 20px;
       &:first-child {
         margin-right: 60px;
+      }
+    }
+    @media (min-width: $screen-xs-min) {
+      h1 {
+        font-size: 3.75em;
       }
     }
     @media (min-width: $screen-sm-min) {
@@ -67,12 +73,12 @@
     align-items: center;
     justify-content: flex-end;
     margin: 0 auto;
-    max-height: 100vh;
     width: 100%;
     height: 100%;
     position: relative;
     @media screen and (min-width: $screen-sm-min) {
       justify-content: center;
+      max-height: 100vh;
     }
   }
   .home-hero-headshot {
@@ -91,11 +97,11 @@
       max-width: 780px;
     }
     @media screen and (min-width: $screen-xs-min) {
-      margin-top: -10vh;
+      margin-top: -5vh;
     }
     @media screen and (min-width: $screen-sm-min) {
       position: absolute;
-      width: 55%;
+      width: 50%;
       margin-top: 0;
     }
     @media screen and ( min-width: $screen-md-min ) {
@@ -123,13 +129,14 @@
     }
   }
   .home-hero-text-content {
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.95);
     margin: 0 auto 0 auto;
-    padding: 0vw 3vw 50px;
+    max-width: 90%;
+    padding: 0vw 5vw 50px;
     z-index: 2;
     @media screen and (min-width: $screen-xs-min) {
-      padding-left: 11vw;
-      padding-right: 11vw;
+      padding-left: 6vw;
+      padding-right: 6vw;
     }
     @media screen and (min-width: $screen-sm-min) {
       background-color: transparent;
