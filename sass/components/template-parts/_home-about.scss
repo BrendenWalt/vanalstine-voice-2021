@@ -28,6 +28,9 @@
     .about-box {
       position: relative;
       background-color: $color__white;
+      ul, li {
+        font-weight: 400;
+      }
     }
     h2 {
       color: $color__text-primary;
@@ -46,7 +49,10 @@
       }
     }
     p {
-      margin: 0 0 25px;
+      margin: 0 0 15px;
+      span {
+        font-weight: 300;
+      }
     }
     .about-cta-container {
       margin: 0 0 0 auto;
