@@ -30,11 +30,11 @@
               <h4><?php echo the_field('testimonial_text') ?></h4>
               <!-- Testimonial image -->
               
-              <?php /* if(!empty( $image )) : ?>
+              <?php if(!empty( $image )) : ?>
                 <div class="testimonial-img">
                   <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr( $image['alt']); ?>">
                 </div>
-              <?php endif;  */ ?>
+              <?php endif; ?>
 
               <footer>
               

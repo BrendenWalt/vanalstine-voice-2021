@@ -48,9 +48,13 @@
       img {
         display: block;
         border-radius: 50%;
-        border: 3px solid $color__brand-secondary;
+        border: 3px solid #fff2f7;
         width: 75px;
         height: 75px;
+        @media screen and (min-width: $screen-md-min) {
+          width: 100px;
+          height: 100px;
+        }
       }
     }
   }
