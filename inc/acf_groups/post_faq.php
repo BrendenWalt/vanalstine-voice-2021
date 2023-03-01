@@ -41,6 +41,25 @@ acf_add_local_field_group(array(
 			'media_upload' => 0,
 			'delay' => 0,
 		),
+		array(
+      'key' => 'field_600c46ec2_faq_toggle',
+      'label' => 'ON/OFF',
+      'name' => 'faq_on',
+      'type' => 'true_false',
+      'instructions' => '',
+      'required' => 0,
+      'conditional_logic' => 0,
+      'wrapper' => array(
+        'width' => '',
+        'class' => '',
+        'id' => '',
+      ),
+      'message' => '',
+			'default_value' => 1,
+			'ui' => 1,
+			'ui_on_text' => 'ACTIVE',
+			'ui_off_text' => 'DEACTIVATED',
+    ),
 	),
 	'location' => array(
 		array(

@@ -1,0 +1,53 @@
+.faq-section {
+  background-color: $color__white;
+  padding: 50px 5% 0px;
+  margin: 0 auto 100px;
+  h1 {
+    color: $color__text-primary;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 2.75rem;
+    line-height: 2.75rem;
+    margin-top: 0;
+    position: relative;
+    @include fancy-divider-left;
+    @media screen and (min-width: $screen-md-min) {
+      font-size: 4rem;
+      line-height: 3.8rem;
+    }
+  }
+  .content-container.faq-container {
+    width: 100%;
+    max-width: $content_sm_width;
+  }
+  .faqs-container {
+    margin-top: 4vh;
+  }
+  .faq-content-block {
+    color: $color__text-primary;
+    padding: 5% 35px;
+  }
+  .faq-answer {
+    color: $color__text-primary;
+    border-top: 1px solid $color__background-hr;
+  }
+  .faq-item {
+    background-color: $color__background-light;
+    padding: 30px 8%;
+    border-radius: 10px;
+    @include card-shadow;
+  }
+  .uk-accordion-title {
+    font-weight: bold;
+    color: $color__text-primary;
+    &:visited {
+      color: inherit;
+    }
+    &:hover {
+      color: $color__brand-secondary;
+    }
+  }
+  .uk-accordion > :nth-child(n+2) {
+    margin-top: 35px;
+  }
+}

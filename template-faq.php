@@ -10,42 +10,62 @@ $args = array(
 	'order' => 'ASC'
 );
 
+$thecontent = get_the_content();
+
 get_header();
 ?>
 
 	<main id="primary" class="faq-main">
-		<section class="faqs-container">
+		<section class="faq-section">
 			<div class="content-container faq-container">
+				<h1>
+					<?php echo get_the_title(); ?>
+				</h1>
+
+				<?php if( !empty( $thecontent ) ) { ?>
+					<div class="faq-content-block">
+						<?php echo( $thecontent ); ?>
+					</div>
+				<?php } ?>
 
 				<?php
 					$loop = new WP_Query( $args );
 					if ($loop->have_posts()) {
-						while ( $loop->have_posts() ) : $loop->the_post();
 				?>
-				
-					<ul uk-accordion>
-						<li>
-							<a class="uk-accordion-title" href="#"><?php echo the_field('question'); ?></a>
-							<div class="faq-answer uk-accordion-content">
-								<p>
-									<?php echo the_field('answer'); ?>
-								</p>
-							</div>
-						</li>
-					</ul>
-				
+					<div class="faqs-container">
+						<ul uk-accordion>
+							<?php
+									while ( $loop->have_posts() ) : $loop->the_post();
+									if (get_field( 'faq_on' )) {
+							?>
+							<li class="faq-item">
+									<a class="uk-accordion-title" href="#"><?php echo the_field('question'); ?></a>
+									<div class="faq-answer uk-accordion-content">
+										<p>
+											<?php echo the_field('answer'); ?>
+										</p>
+									</div>
+							</li>
+							<?php
+								}
+								endwhile;
+								wp_reset_postdata();
+							?>
 
+						</ul>
+					</div>
 				<?php 
-					endwhile;
+					
 					wp_reset_postdata();
 					}
 				?>
 
 			</div>
-			<div class="faq-contact">
-				<?php get_template_part('template-parts/content-home','contact'); ?>
-			</div>
 		</section>
+
+		<!-- Contact form -->
+		<?php get_template_part('template-parts/content','contact-form'); ?>
+
 	</main><!-- #main -->
 
 <?php
