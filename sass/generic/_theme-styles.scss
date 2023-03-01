@@ -44,6 +44,10 @@ a:hover {
   text-decoration: none;
 }
 
+em {
+  color: inherit;
+}
+
 // Typography media queries
 @media only screen and (min-width: $screen-md-min) {
   h2 {
