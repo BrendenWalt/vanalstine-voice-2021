@@ -5,10 +5,10 @@
 
 <!-- Reusable contact form -->
 <?php if( get_field('include_contact_form')) { ?>
-<section class="content-container contact-form">
-  <div>
+<section>
+  <div class="content-container contact-form">
     <h2 class="contact-headline"><?php echo( $headline ); ?></h2>
-    <div class="uk-card uk-card-default uk-card-body"><?php echo do_shortcode( $form ); ?></div>
+    <div class="uk-card uk-card-default uk-card-body footer-form"><?php echo do_shortcode( $form ); ?></div>
   </div>
 </section>
 

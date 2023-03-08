@@ -41,7 +41,7 @@
     font-weight: bold;
     color: $color__text-primary;
     &:visited {
-      color: inherit;
+      color: $color__text-primary;
     }
     &:hover {
       color: $color__brand-secondary;

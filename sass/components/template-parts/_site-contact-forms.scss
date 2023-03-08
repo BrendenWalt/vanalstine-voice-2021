@@ -5,6 +5,10 @@
   position: relative;
   h2 {
     color: $color__text-primary;
+    text-align: center;
+    &.contact-headline {
+      font-size: 3rem;
+    }
   }
   &:before {
     content: '';
@@ -26,6 +30,21 @@
     width: 80%;
     max-width: 500px;
   }
+  p:last-of-type {
+    margin-bottom: 0px;
+    margin-top: 40px;
+  }
+  input[type="submit"].wpcf7-form-control {
+   margin: 0px auto 10px;
+  }
+
+}
+
+.footer-form {
+  border-radius: 25px;
+  max-width: 750px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 form.wpcf7-form {
