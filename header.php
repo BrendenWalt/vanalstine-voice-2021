@@ -41,7 +41,9 @@
 					the_custom_logo();
 				}?>
 				<h2>
-					<?php echo str_replace(' ', '</span><br/><span>', get_bloginfo('name')); ?>
+					<a href="<?php echo home_url(); ?>">
+						<?php echo str_replace(' ', '</span><br/><span>', get_bloginfo('name')); ?>
+					</a>
 				</h2>
 			</div><!-- .site-branding -->
 

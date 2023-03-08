@@ -118,6 +118,9 @@ nav ul {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	* {
+		font-family: $font-headline;
+	}
 	img {
 		max-height: 85px;
 		width: auto;
@@ -132,6 +135,9 @@ nav ul {
 		margin: 0px 0px 0px 20px;
 		span {
 			font-family: $font-headline;
+		}
+		a, :visited, :hover {
+			color: $color__text-primary
 		}
 	}
 }
