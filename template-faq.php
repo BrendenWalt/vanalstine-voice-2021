@@ -39,10 +39,10 @@ get_header();
 									if (get_field( 'faq_on' )) {
 							?>
 							<li class="faq-item">
-									<a class="uk-accordion-title" href="#"><?php echo the_field('question'); ?></a>
+									<a class="uk-accordion-title" href="#"><?php echo the_field( 'question' ); ?></a>
 									<div class="faq-answer uk-accordion-content">
 										<p>
-											<?php echo the_field('answer'); ?>
+											<?php echo the_field( 'answer' ); ?>
 										</p>
 									</div>
 							</li>
@@ -63,8 +63,11 @@ get_header();
 			</div>
 		</section>
 
-		<!-- Contact form -->
-		<?php get_template_part('template-parts/content','contact-form'); ?>
+		<?php if (get_field( 'include_contact_form' )): ?>
+			<?php get_template_part( 'template-parts/content' , 'section-divider' ); ?>
+			<!-- Contact form -->
+			<?php get_template_part( 'template-parts/content' , 'contact-form' ); ?>
+		<?php endif; ?>
 
 	</main><!-- #main -->
 
