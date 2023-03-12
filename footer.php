@@ -23,7 +23,11 @@
 						the_custom_logo();
 					}?>
 				</div>
-				<h4><?php echo(get_bloginfo('name')); ?></h4>
+				<h4>
+					<a href="<?php echo home_url(); ?>">
+						<?php echo(get_bloginfo('name')); ?>
+					</a>
+				</h4>
 			</div>
 
 			<!-- Footer Menu -->
