@@ -25,7 +25,11 @@
   }
   .faq-content-block {
     color: $color__text-primary;
-    padding: 5% 35px;
+    @media screen and (min-width: $screen-sm-min) {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+    padding: 35px 20px;
   }
   .faq-answer {
     color: $color__text-primary;
