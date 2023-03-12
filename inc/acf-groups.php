@@ -23,6 +23,9 @@
     include 'acf_groups/home_testimonials.php';
     include 'acf_groups/post_program.php';
     include 'acf_groups/post_faq.php';
+
+    // Contact Form
+    include 'acf_groups/reusable_contact_form.php';
   endif;
 
 ?>
