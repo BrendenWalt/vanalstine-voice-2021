@@ -1,0 +1,24 @@
+.section-divider {
+  position: relative;
+  height: 14px;
+  &:before {
+    content: '';
+    border-bottom: 2px solid $color__brand-primary;
+    position: absolute;
+    left: 50%;
+    top: 0px;
+    transform: translateX(-55%);
+    width: 80%;
+    max-width: 500px;
+  }
+  &:after {
+    content: '';
+    border-bottom: 2px solid $color__brand-primary;
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    transform: translateX(-45%);
+    width: 80%;
+    max-width: 500px;
+  }
+}
