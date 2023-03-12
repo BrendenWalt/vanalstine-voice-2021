@@ -53,8 +53,11 @@ $bottom-spacing: 20px;
 			font-size: 2rem;
 			text-align: center;
 			margin: 0;
-			a:hover, a:visited {
-				color: $color__text-primary;
+			a {
+				font-family: $font-headline;
+				&:hover, &:visited {
+					color: $color__text-primary;
+				}
 			}
 		}
 		.logo img {
