@@ -11,6 +11,8 @@
     include 'acf_groups/home_banner.php';
     // Home Programs
     include 'acf_groups/home_programs_block.php';
+    // Home Genres
+    include 'acf_groups/home_genres.php';
     // Home Video Block
     include 'acf_groups/home_video.php';
     // Contact form

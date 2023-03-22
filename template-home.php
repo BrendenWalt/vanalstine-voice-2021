@@ -13,6 +13,7 @@ get_header();
 			get_template_part('template-parts/home-page/content-home','hero');
 			get_template_part('template-parts/home-page/content-home','video');
 			get_template_part('template-parts/home-page/content-home','benefits');
+			get_template_part('template-parts/home-page/content-home','genres');
 			get_template_part('template-parts/home-page/content-home','programs');
 			get_template_part('template-parts/home-page/content-home','about');
 			get_template_part('template-parts/home-page/content-home','cta-banner');
